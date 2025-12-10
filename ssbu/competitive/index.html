@@ -3,32 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SSBU Competitive Prep</title>
+  <title>SSBU Competitive Prep & Crew Battles</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
   <style>
-    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
 
-  <header class="bg-gradient-to-r from-amber-500 via-red-600 to-slate-900 text-white shadow-lg">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-red-700 via-red-500 to-slate-900 text-white shadow-lg">
     <div class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between">
       <div>
-        <h1 class="text-xl md:text-2xl font-bold">SSBU Competitive Prep</h1>
-        <p class="text-xs md:text-sm opacity-80">Stage picks, game plans, stock trading, and mindset.</p>
+        <h1 class="text-xl md:text-2xl font-bold">SSBU Competitive Prep & Crew Battles</h1>
+        <p class="text-xs md:text-sm opacity-80">
+          Official crew battle format • Strategy • Stages • Tournament process
+        </p>
       </div>
       <a href="../index.html"
          class="hidden sm:inline-block text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full border border-white/30">
         ← SSBU Home
       </a>
     </div>
+
+    <!-- Nav -->
     <nav class="bg-black/30">
       <div class="max-w-5xl mx-auto px-4 py-2 text-xs md:text-sm flex flex-wrap gap-2">
         <a href="../index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Home</a>
         <a href="../drills/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Drills</a>
-        <span class="px-3 py-1 rounded-full bg-amber-500 text-black font-semibold">Competitive Prep</span>
+        <span class="px-3 py-1 rounded-full bg-red-500 text-black font-semibold">Competitive Prep</span>
         <a href="../vod/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">VOD Review</a>
         <a href="../characters/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Character Lab</a>
         <a href="../resources/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Resources</a>
@@ -36,144 +44,452 @@
     </nav>
   </header>
 
-  <!-- Overview -->
+  <!-- HERO / INTRO -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9 grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <h2 class="text-lg md:text-2xl font-semibold mb-2">Crew Battles • Tournament Ready</h2>
+        <p class="text-sm text-gray-700 mb-3">
+          This page is your guide to playing in <span class="font-semibold">official 4v4 crew battles</span>,
+          understanding the rules, and building a real
+          <span class="font-semibold">competitive process</span> for bracket.
+        </p>
+        <ul class="text-sm text-gray-800 list-disc list-inside space-y-1 mb-4">
+          <li>How the crew battle format works.</li>
+          <li>How to choose openers, counterpicks, and anchors.</li>
+          <li>How to use stages, stocks, and momentum to your advantage.</li>
+          <li>How to prepare mentally before each set.</li>
+        </ul>
+        <div class="flex flex-wrap gap-3">
+          <a href="#crew-rules"
+             class="px-4 py-2 rounded-lg bg-red-600 text-white text-xs md:text-sm font-semibold hover:bg-red-700">
+            View Crew Battle Rules
+          </a>
+          <a href="#crew-strategy"
+             class="px-4 py-2 rounded-lg border border-gray-300 text-xs md:text-sm font-semibold hover:bg-gray-100">
+            Crew Battle Strategy Guide
+          </a>
+        </div>
+      </div>
+      <div class="bg-slate-900 text-white rounded-2xl p-5 shadow-lg">
+        <h3 class="text-base md:text-lg font-semibold mb-2">Competitive Checklist</h3>
+        <ol class="text-xs md:text-sm text-slate-100 space-y-1">
+          <li>1. Know the crew battle rules.</li>
+          <li>2. Know your role (opener / counterpick / anchor).</li>
+          <li>3. Have a stage & matchup game plan.</li>
+          <li>4. Use a pre-match routine every set.</li>
+          <li>5. Review your VODs and adjust your plan.</li>
+        </ol>
+        <p class="mt-3 text-[11px] text-slate-300">
+          Everything below is based on the official Esports Ohio SSBU rules and adapted into student-friendly language
+          so you know exactly what to do on game day. :contentReference[oaicite:0]{index=0}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREW BATTLE FORMAT (OFFICIAL RULES) -->
+  <section id="crew-rules" class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Crew Battle Format (Official Rules)</h2>
+      <p class="text-sm text-slate-200 mb-4">
+        These rules summarize the official Esports Ohio SSBU crew battle format so you always know what’s happening
+        and what’s expected in a match. :contentReference[oaicite:1]{index=1}
+      </p>
+
+      <!-- Structure Cards -->
+      <div class="grid md:grid-cols-3 gap-4 text-sm mb-6">
+        <div class="bg-red-600/20 border border-red-400/60 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Match Structure</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Format: <span class="font-semibold">4v4 Crew Battle</span>.</li>
+            <li>Each player has 3 stocks.</li>
+            <li>Each team has 12 total stocks per round.</li>
+            <li>All matches are <span class="font-semibold">Best of 3 rounds</span>.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Game / Round / Series</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li><span class="font-semibold">Game:</span> 1v1, 3-stock vs 3-stock.</li>
+            <li><span class="font-semibold">Round:</span> Sequence of games until all 12 stocks on one team are gone.</li>
+            <li><span class="font-semibold">Series:</span> Best of 3 rounds; win 2 rounds to win the match.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Rosters</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Rosters must have exactly <span class="font-semibold">4 players</span> to compete.</li>
+            <li>All players should use a wired (ethernet) connection.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lobby Settings -->
+      <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 mb-6 text-sm">
+        <h3 class="font-semibold mb-2">Game Lobby Settings (Host / Home Team)</h3>
+        <p class="text-slate-200 mb-2">
+          The home team creates the arena and shares the ID + password with the visiting team. Visiting players should
+          double-check the rules before starting. :contentReference[oaicite:2]{index=2}
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 text-xs">
+          <ul class="list-disc list-inside text-slate-100 space-y-1">
+            <li>Format: 1-on-1</li>
+            <li>Style: Stock</li>
+            <li>Stock: 3</li>
+            <li>Time Limit: 8 minutes</li>
+            <li>FS Meter: Off</li>
+            <li>Items: Off, None</li>
+            <li>Stage Hazards: Off</li>
+          </ul>
+          <ul class="list-disc list-inside text-slate-100 space-y-1">
+            <li>Launch Rate: 1.0x</li>
+            <li>Score Display: Off</li>
+            <li>Show Damage: Yes</li>
+            <li>Spirits: Off</li>
+            <li>Stage: Choice</li>
+            <li>Max Players: 2</li>
+            <li>Voice Chat: Off</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stage Rules -->
+      <div class="grid md:grid-cols-2 gap-5 mb-6 text-sm">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Stage List</h3>
+          <p class="text-xs text-slate-300 mb-1 font-semibold">Starter Stages:</p>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Battlefield</li>
+            <li>Final Destination</li>
+            <li>Pokémon Stadium 2</li>
+            <li>Smashville</li>
+            <li>Town &amp; City</li>
+          </ul>
+
+          <p class="text-xs text-slate-300 mt-3 mb-1 font-semibold">Counterpick Stages:</p>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Kalos Pokémon League</li>
+            <li>Lylat Cruise</li>
+            <li>Small Battlefield</li>
+            <li>Yoshi’s Story</li>
+            <li>Hollow Bastion</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Stage Selection Procedure</h3>
+          <p class="text-xs text-slate-300 mb-1 font-semibold">Game 1 (Starters only): 1–2–1 Striking</p>
+          <ol class="list-decimal list-inside text-slate-100 text-xs space-y-1">
+            <li>Player A strikes 1 stage.</li>
+            <li>Player B strikes 2 stages.</li>
+            <li>Player A strikes 1 more stage.</li>
+            <li>The remaining stage is played.</li>
+          </ol>
+
+          <p class="text-xs text-slate-300 mt-3 mb-1 font-semibold">Games 2+ (Starters + Counterpicks):</p>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Winner of the previous game bans 3 stages from the full list.</li>
+            <li>Loser selects from the remaining stages.</li>
+            <li>Winner must stay the same character.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Player Order & Stock Carryover -->
+      <div class="grid md:grid-cols-2 gap-5 mb-6 text-sm">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Player Order (“First Up”)</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Away Team declares their first player first.</li>
+            <li>Home Team then declares their first player.</li>
+            <li>In later rounds, the <span class="font-semibold">team that won the previous round</span> declares first.</li>
+            <li>The “first up” player must be different each round.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Stock Carryover & SD Procedure</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Winner keeps the number of stocks they had remaining.</li>
+            <li>At the start of the next game, winner must SD until their stocks match their previous remaining stock count.</li>
+            <li>During SD: no attacks, no taunts, no charging moves or movement to gain advantage.</li>
+            <li>Play resumes only after invincibility ends and both players reset to neutral positions.</li>
+            <li>If a player SDs too many times, play continues from that stock state.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Timeouts & Restrictions -->
+      <div class="grid md:grid-cols-2 gap-5 text-sm">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Timeouts & Sudden Death</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>If time runs out, player with <span class="font-semibold">more stocks</span> wins.</li>
+            <li>If stocks are tied, player with <span class="font-semibold">lower %</span> wins.</li>
+            <li>If both stocks and % are tied, play a <span class="font-semibold">1-stock, 3-minute tiebreaker</span> on the same stage with the same characters.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Character & Tech Restrictions</h3>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Amiibos are prohibited.</li>
+            <li>DLC fighters must be released for at least 1 week before use.</li>
+            <li>Mii Fighters must be Guest Miis and declared by type + specials (e.g., “Gunner 1321”).</li>
+            <li>Alternate stage forms are not allowed.</li>
+            <li>Disconnections and controller issues are mostly the player’s responsibility; repeated issues can cause forfeits.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREW BATTLE STRATEGY GUIDE -->
+  <section id="crew-strategy" class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Crew Battle Strategy Guide</h2>
+      <p class="text-sm text-gray-700 mb-4">
+        Knowing the rules is step one. Step two is using them to win. This section explains how to
+        build a smart lineup, when to use certain players, and how to think about stocks and stages as a team.
+      </p>
+
+      <!-- Roles -->
+      <div class="grid md:grid-cols-3 gap-4 text-sm mb-6">
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Opener</h3>
+          <p class="text-xs text-gray-800">
+            Usually a solid, consistent player who:
+          </p>
+          <ul class="list-disc list-inside text-xs text-gray-800 space-y-1 mt-1">
+            <li>Plays well with minimal info on the opponent.</li>
+            <li>Doesn’t tilt easily if things go bad early.</li>
+            <li>Has strong general neutral & safe game plan.</li>
+          </ul>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Counterpick Player</h3>
+          <p class="text-xs text-gray-800">
+            These players shine when they know the matchup:
+          </p>
+          <ul class="list-disc list-inside text-xs text-gray-800 space-y-1 mt-1">
+            <li>Can pick stages that fit their character perfectly.</li>
+            <li>Play characters that hard-counter specific archetypes.</li>
+            <li>Are comfortable coming in down or up stocks.</li>
+          </ul>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Anchor</h3>
+          <p class="text-xs text-gray-800">
+            Your last player, often your most clutch:
+          </p>
+          <ul class="list-disc list-inside text-xs text-gray-800 space-y-1 mt-1">
+            <li>Can stay calm when the team is behind.</li>
+            <li>Has strong kill confirms and ledge trapping.</li>
+            <li>Comfortable in high-pressure, 1-stock situations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lineup Strategy -->
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6 text-sm text-gray-900">
+        <h3 class="font-semibold mb-2">Building a Lineup</h3>
+        <ol class="list-decimal list-inside text-xs md:text-sm space-y-1">
+          <li>
+            Decide your main win conditions:
+            <span class="italic">“We win by consistent neutral,” “We win by strong edgeguards,” “We win by one or two dominant matchups.”</span>
+          </li>
+          <li>
+            Place your <span class="font-semibold">most stable player</span> as opener in most matches.
+          </li>
+          <li>
+            Keep at least one <span class="font-semibold">hard counterpick</span> in the middle of the lineup for specific characters.
+          </li>
+          <li>
+            Use your <span class="font-semibold">anchor</span> for either big comebacks or to close out tight rounds.
+          </li>
+          <li>
+            Do not rely on one player to do everything. Crew battles reward teams, not just superstars.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Stock & Stage Strategy -->
+      <div class="grid md:grid-cols-2 gap-5 text-sm">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Stocks = Team Resource</h3>
+          <p class="text-xs md:text-sm text-gray-800 mb-1">
+            Think of stocks as a shared pool, not just individual lives.
+          </p>
+          <ul class="list-disc list-inside text-xs md:text-sm text-gray-800 space-y-1">
+            <li>Trading 2 stocks for 3 is good, even if you “lose” that game.</li>
+            <li>If you are up a full stock, you don’t need to force risky edgeguards.</li>
+            <li>If you are behind multiple stocks, it can be worth taking a calculated risk for a big edgeguard or read.</li>
+          </ul>
+          <p class="text-[11px] text-gray-600 mt-2">
+            Between games, talk as a team: “Do I play safe and save stocks, or push for a big swing?”
+          </p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Stage & Counterpick Logic</h3>
+          <ul class="list-disc list-inside text-xs md:text-sm text-gray-800 space-y-1 mb-1">
+            <li>Pick stages that highlight your strengths (combos, kill power, zoning).</li>
+            <li>Avoid stages that remove your win condition (e.g., no platforms for ladder combos).</li>
+            <li>When behind, consider stages that create chaos your character benefits from.</li>
+          </ul>
+          <p class="text-[11px] text-gray-600">
+            Use the Stage Planning section below to write out preferred stages for each of your mains and secondaries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURNAMENT MINDSET & GAME PLAN -->
   <section class="bg-white">
     <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
       <h2 class="text-lg md:text-2xl font-semibold mb-3">Tournament Mindset & Game Plan</h2>
       <p class="text-sm text-gray-700 mb-3">
-        Being “good at friendlies” is not the same as being tournament ready. This page helps you build
-        a repeatable process for <span class="font-semibold">picks/bans, game 1 plans, stock trading,
-        and mental resets</span>.
+        Being “good at friendlies” doesn’t automatically translate to bracket success. You need a simple
+        routine that you follow every time you play a set.
       </p>
+
       <div class="grid md:grid-cols-3 gap-4 text-xs md:text-sm">
         <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
           <h3 class="font-semibold mb-2">Before the Set</h3>
           <ul class="space-y-1 text-gray-800">
-            <li>• Breathe and slow your thoughts.</li>
-            <li>• Decide your starter stage & character.</li>
-            <li>• Choose 1–2 goals (e.g., “ledge trap better”).</li>
+            <li>• Take a deep breath and slow your thoughts.</li>
+            <li>• Decide your starting character.</li>
+            <li>• Know your preferred starter stage & what you want to ban.</li>
+            <li>• Pick 1–2 goals (e.g., “ledge trap more patiently”).</li>
           </ul>
         </div>
         <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
           <h3 class="font-semibold mb-2">During the Set</h3>
           <ul class="space-y-1 text-gray-800">
-            <li>• Track their habits at ledge & in disadvantage.</li>
-            <li>• Trade stocks smartly—don’t panic offstage.</li>
-            <li>• Stay aware of percent kill ranges.</li>
+            <li>• Watch their habits in neutral, ledge, and disadvantage.</li>
+            <li>• Don’t autopilot—adjust to what they’re actually doing.</li>
+            <li>• Use safe pressure instead of constant all-ins.</li>
+            <li>• Stay aware of kill ranges for both characters.</li>
           </ul>
         </div>
         <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
           <h3 class="font-semibold mb-2">After the Set</h3>
           <ul class="space-y-1 text-gray-800">
             <li>• Write down 1 thing you did well.</li>
-            <li>• Write down 1 thing to practice later.</li>
-            <li>• If you lost, cool down before friendlies.</li>
+            <li>• Write down 1 habit to fix.</li>
+            <li>• If you lost, give yourself a short cooldown before friendlies.</li>
+            <li>• Plan what to practice before your next event.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stages -->
+  <!-- STAGE & COUNTERPICK PLANNING -->
   <section class="bg-slate-900 text-white">
     <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
       <h2 class="text-lg md:text-2xl font-semibold mb-3">Stage & Counterpick Planning</h2>
       <p class="text-sm text-slate-200 mb-4">
-        Every character has stages that fit their game plan and stages that feel uncomfortable. Build a simple
-        “pick/ban” game plan so you’re never guessing at the setup screen.
+        Stage choice is a big part of competitive Smash. Knowing where your character is strong and where
+        your opponent is uncomfortable can swing a whole round.
       </p>
 
       <div class="grid md:grid-cols-2 gap-5 text-sm">
         <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
           <h3 class="font-semibold mb-2">Your Stage Notes</h3>
-          <p class="text-slate-200 mb-2">For your main, list:</p>
-          <ul class="list-disc list-inside text-slate-100 space-y-1">
+          <p class="text-slate-100 text-xs mb-1">
+            For your main, fill this out (mentally or on paper):
+          </p>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
             <li>2–3 favorite starter stages and why.</li>
-            <li>1–2 “comfort” counterpicks that fit your win condition.</li>
+            <li>1–2 strong counterpicks that fit your win condition.</li>
             <li>1–2 stages you usually want to ban.</li>
           </ul>
-          <p class="text-xs text-slate-400 mt-2">
-            Example: “Mario – Loves triplats for combo ladders, bans big flat stages vs zoners.”
+          <p class="text-[11px] text-slate-400 mt-2">
+            Example: “Mario – Likes triplats for combo ladders; bans big flat stages vs zoners.”
           </p>
         </div>
         <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
           <h3 class="font-semibold mb-2">Opponent Stage Habits</h3>
-          <p class="text-slate-200 mb-2">
-            Pay attention to where certain archetypes like to go:
+          <p class="text-xs text-slate-100 mb-1">
+            Common stage tendencies by archetype:
           </p>
-          <ul class="list-disc list-inside text-slate-100 space-y-1">
-            <li>Swordies: strong on wide stages with room (PS2, Town & City).</li>
-            <li>Zoners: like big maps for space (Kalos, FD).</li>
-            <li>Combo characters: prefer platforms to extend strings.</li>
+          <ul class="list-disc list-inside text-slate-100 text-xs space-y-1">
+            <li>Swordies: want space & mid platforms (PS2, Town &amp; City).</li>
+            <li>Zoners: like bigger open stages (Kalos, FD).</li>
+            <li>Combo characters: want platforms to extend strings (Battlefield, Yoshi’s Story).</li>
           </ul>
-          <p class="text-xs text-slate-400 mt-2">
-            Use this to guide bans even if you don’t know their exact character matchup.
+          <p class="text-[11px] text-slate-400 mt-2">
+            You can use this even when you don’t fully know the matchup. Think about what they gain from each stage.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stock Trading -->
+  <!-- STOCK TRADING & RISK -->
   <section class="bg-white">
     <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
       <h2 class="text-lg md:text-2xl font-semibold mb-3">Stock Trading & Risk Management</h2>
       <p class="text-sm text-gray-700 mb-3">
-        “Stock trading” is about understanding when it’s worth taking a risk to close a stock, and when you need
-        to back off and keep your lead safe.
+        In crew battles, stocks matter more than “who won that game.” Sometimes you win even when your character
+        explodes offstage—if you took enough stocks first.
       </p>
 
       <div class="grid md:grid-cols-2 gap-5 text-sm text-gray-900">
         <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
-          <h3 class="font-semibold mb-1">When to Push</h3>
-          <ul class="list-disc list-inside space-y-1">
-            <li>You are behind a full stock and need a momentum shift.</li>
-            <li>Opponent is offstage with no jump.</li>
-            <li>You’ve identified a strong habit (e.g., always jump from ledge).</li>
+          <h3 class="font-semibold mb-2">When to Push</h3>
+          <ul class="list-disc list-inside text-xs md:text-sm space-y-1">
+            <li>You are behind by a full stock or more and need a swing.</li>
+            <li>They are offstage with no jump and a weak recovery.</li>
+            <li>You’ve clearly seen a habit (always roll in, always jump from ledge).</li>
+            <li>Your character gets huge reward from a read (e.g., spike or early kill).</li>
           </ul>
-          <p class="text-xs text-gray-600 mt-1">
-            These are moments where a bigger edgeguard or read can be reasonable.
+          <p class="text-[11px] text-gray-600 mt-2">
+            These are times where a higher-risk edgeguard or hard read can be reasonable.
           </p>
         </div>
         <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
-          <h3 class="font-semibold mb-1">When to Chill</h3>
-          <ul class="list-disc list-inside space-y-1">
+          <h3 class="font-semibold mb-2">When to Chill</h3>
+          <ul class="list-disc list-inside text-xs md:text-sm space-y-1">
             <li>You are up a full stock or more.</li>
             <li>You’re at kill percent and they’re at low percent.</li>
-            <li>You’re in the corner and they are pressuring safely.</li>
+            <li>You’re cornered and they are pressuring safely.</li>
+            <li>You’re the anchor and the team needs you to last as long as possible.</li>
           </ul>
-          <p class="text-xs text-gray-600 mt-1">
-            Back up, reset center stage, and force them to take the first risk.
+          <p class="text-[11px] text-gray-600 mt-2">
+            Back off, reset to center stage, and force them to overextend first.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pre-match checklist -->
+  <!-- PRE-MATCH CHECKLIST -->
   <section class="bg-slate-900 text-white">
     <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
       <h2 class="text-lg md:text-2xl font-semibold mb-3">Pre-Match Checklist</h2>
       <p class="text-sm text-slate-200 mb-3">
-        Use this before each set to lock in and avoid playing on autopilot.
+        Use this checklist before crew battle rounds or individual sets. The goal is to enter each match
+        with a clear head and a clear plan.
       </p>
 
       <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 text-sm">
         <ol class="list-decimal list-inside space-y-1 text-slate-100">
-          <li>Deep breath in for 4 seconds, out for 4 seconds.</li>
-          <li>Decide which character you’re starting with.</li>
-          <li>Know your preferred starter stage (and what you want to ban).</li>
-          <li>Pick 1–2 focus goals (e.g., “ledge trap more patiently,” “respect their out-of-shield options”).</li>
-          <li>Remind yourself: you are here to learn, not just to win right now.</li>
+          <li>Deep breath: in for 4 seconds, hold for 2, out for 4.</li>
+          <li>Confirm your character choice and backup plan.</li>
+          <li>Know your preferred starter stage & what you’ll likely ban.</li>
+          <li>Pick 1 neutral habit to focus on (e.g., “stop jumping from the corner”).</li>
+          <li>Pick 1 advantage habit to focus on (e.g., “hold ledge trap, don’t rush in”).</li>
+          <li>Remind yourself: the goal is to learn and improve, not just to panic about winning.</li>
+          <li>Say out loud (or in your head): “I will stay calm, I will adapt, and I will use what I’ve practiced.”</li>
         </ol>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-300 py-5 mt-6">
     <div class="max-w-5xl mx-auto px-4 text-center text-xs">
-      <p>Use this page before and after sets. Consistent process leads to consistent results.</p>
+      <p>Use this page before crew battles and tournaments. A consistent process leads to consistent results.</p>
       <p class="mt-1">
         <a href="../index.html" class="underline underline-offset-2 hover:text-white">← Back to SSBU Home</a>
       </p>
