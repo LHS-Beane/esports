@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSBU Drills & Training</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-slate-900 text-white shadow-lg">
+    <div class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold">SSBU Drills & Training</h1>
+        <p class="text-xs md:text-sm opacity-80">Build fundamentals through focused, repeatable practice.</p>
+      </div>
+      <a href="../index.html"
+         class="hidden sm:inline-block text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full border border-white/30">
+        ← SSBU Home
+      </a>
+    </div>
+    <nav class="bg-black/30">
+      <div class="max-w-5xl mx-auto px-4 py-2 text-xs md:text-sm flex flex-wrap gap-2">
+        <a href="../index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Home</a>
+        <span class="px-3 py-1 rounded-full bg-sky-600 text-white font-semibold">Drills</span>
+        <a href="../competitive/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Competitive Prep</a>
+        <a href="../vod/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">VOD Review</a>
+        <a href="../characters/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Character Lab</a>
+        <a href="../resources/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Resources</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-6 md:py-8">
+      <h2 class="text-xl md:text-2xl font-semibold mb-3">How to Use These Drills</h2>
+      <p class="text-sm text-gray-700 mb-3">
+        Don’t just queue into online and hope to get better. Use these drills with a clear focus. Most can be done
+        either with a partner or by using training mode + CPU.
+      </p>
+      <ul class="text-sm text-gray-800 list-disc list-inside space-y-1">
+        <li>Pick 2–4 drills per session.</li>
+        <li>Run each for 5–10 minutes with real intention.</li>
+        <li>Track your progress (success rate, time, consistency).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Neutral Game -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-4">1. Neutral Game Drills</h2>
+      <div class="grid md:grid-cols-2 gap-5 text-sm">
+        <div class="bg-slate-800 rounded-xl p-4 border border-slate-700">
+          <h3 class="font-semibold mb-1">Dash–Shield–Dash Cycling</h3>
+          <p class="text-slate-200 mb-1">Goal: Improve movement fluidity & defense.</p>
+          <p class="text-slate-300 mb-2">
+            Move back and forth across the stage using dash → shield → dash → spot-dodge → dash.
+            Keep a steady rhythm while staying ready to punish.
+          </p>
+          <p class="text-xs text-slate-400">Success: 60 seconds without dropping the pattern or mis-inputting.</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-4 border border-slate-700">
+          <h3 class="font-semibold mb-1">Whiff Punish Practice</h3>
+          <p class="text-slate-200 mb-1">Goal: Punish missed attacks consistently.</p>
+          <p class="text-slate-300 mb-2">
+            Partner uses safe but spaced aerials/tilts. Your job is to stay just out of range and punish any move
+            that whiffs using dash attack, grab, or your main combo starter.
+          </p>
+          <p class="text-xs text-slate-400">Success: 7+ clean whiff punishes in 60 seconds.</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-4 border border-slate-700">
+          <h3 class="font-semibold mb-1">Safe Aerial Spacing Reps</h3>
+          <p class="text-slate-200 mb-1">Goal: Land aerials safely on shield.</p>
+          <p class="text-slate-300 mb-2">
+            Practice short hop → fastfall aerial on an opponent holding shield. Focus on hitting low to the ground
+            and drifting back or down-tilt/spot-dodge after.
+          </p>
+          <p class="text-xs text-slate-400">Success: 20 aerials in a row without getting shield grabbed.</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-4 border border-slate-700">
+          <h3 class="font-semibold mb-1">Burst Range Awareness</h3>
+          <p class="text-slate-200 mb-1">Goal: Understand when you are in danger.</p>
+          <p class="text-slate-300 mb-2">
+            Stand just outside your opponent’s dash attack/grab range. Partner tries to hit you with a burst option;
+            you focus only on micro-adjusting in and out of that threat range.
+          </p>
+          <p class="text-xs text-slate-400">Success: Survive 30 seconds without being hit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ledge / Advantage -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-4">2. Ledge Trapping & Advantage</h2>
+      <div class="grid md:grid-cols-2 gap-5 text-sm text-gray-900">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Ledge Option Rotation</h3>
+          <p class="text-gray-700 mb-2">
+            Partner hangs on ledge and chooses one option: neutral get-up, roll, jump, or get-up attack.
+            You stand at roll distance and try to cover their option with your character’s best tools.
+          </p>
+          <ul class="text-xs text-gray-700 list-disc list-inside">
+            <li>Run 20 reps, then switch roles.</li>
+            <li>Track how many you correctly cover.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">2-Frame Practice</h3>
+          <p class="text-gray-700 mb-2">
+            Have opponent recover to ledge with a consistent timing. Use down tilt, f-tilt, or down smash
+            to try to hit them right before ledge snap (2-frame).
+          </p>
+          <p class="text-xs text-gray-600">Goal: Land at least 5 2-frames in 5 minutes.</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">No-Landing Juggle Drill</h3>
+          <p class="text-gray-700 mb-2">
+            Launch your partner upward and try to keep them in the air as long as possible using up-airs and
+            repositioning. Partner may drift, fastfall, and airdodge, but not attack.
+          </p>
+          <p class="text-xs text-gray-600">Goal: Keep them airborne for 6–10 seconds repeatedly.</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Platform Extension Strings</h3>
+          <p class="text-gray-700 mb-2">
+            On Battlefield/PS2, start a juggle, then specifically route into platform extensions (land on platform,
+            jump again, continue juggles). Focus on smooth movement, not just spamming aerials.
+          </p>
+          <p class="text-xs text-gray-600">Goal: 3+ hit juggles with at least one platform extension.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offstage & Disadvantage -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-4">3. Offstage & Disadvantage</h2>
+      <div class="grid md:grid-cols-2 gap-5 text-sm">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Offstage Intercept Drill</h3>
+          <p class="text-slate-200 mb-2">
+            Both players jump offstage together. The “aggressor” must intercept using fair/nair/bair, while the
+            “defender” tries to mix drift and airdodge to make it back.
+          </p>
+          <p class="text-xs text-slate-400">Goal: Aggressor gets 60%+ successful edgeguards; defender survives 40%.</p>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">No Double Jump Recovery</h3>
+          <p class="text-slate-200 mb-2">
+            Start offstage without your double jump. Practice mixing low/high recoveries, early/late up-B, and
+            aggressive recoveries that hit the opponent.
+          </p>
+          <p class="text-xs text-slate-400">Goal: Recover successfully 8/10 times vs light pressure.</p>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Disadvantage Mix-Up Drill</h3>
+          <p class="text-slate-200 mb-2">
+            Partner juggles you while you rotate through four options: fastfall, drift back, neutral airdodge,
+            directional airdodge. You are not trying to hit them, only to escape.
+          </p>
+          <p class="text-xs text-slate-400">Goal: Escape juggle within 3–4 interactions.</p>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">Rising Aerial Edgeguard</h3>
+          <p class="text-slate-200 mb-2">
+            Run offstage, use a rising aerial (fair/nair/bair) to hit the recovering opponent, then drift back and
+            recover safely. Focus on spacing and survivability.
+          </p>
+          <p class="text-xs text-slate-400">Goal: Land 5 successful rising edgeguards in a row without SDs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kill Confirms & Tech -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9 space-y-6">
+      <div>
+        <h2 class="text-lg md:text-2xl font-semibold mb-3">4. Kill Confirms & Combos</h2>
+        <p class="text-sm text-gray-700 mb-2">
+          In training mode, set CPU to “Random DI” and practice your character’s main confirms:
+        </p>
+        <ul class="text-sm text-gray-800 list-disc list-inside space-y-1">
+          <li>1–2 combo starters at low % (bread-and-butter).</li>
+          <li>1 mid-percent combo that leads to ledge or juggle.</li>
+          <li>1–2 kill confirms (jab → back air, nair → up smash, etc.).</li>
+        </ul>
+        <p class="text-xs text-gray-600 mt-1">
+          Goal: Land each confirm 10 times in a row without dropping input/timing.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-lg md:text-2xl font-semibold mb-3">5. Movement & Tech Skill</h2>
+        <div class="grid md:grid-cols-2 gap-5 text-sm text-gray-900">
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">Short Hop / Fastfall Drill</h3>
+            <p class="mb-2 text-gray-700">
+              Do 20 perfect short hops in a row, then 20 short hop → fastfalls.
+              Focus on consistent height and timing.
+            </p>
+            <p class="text-xs text-gray-600">If you mess up, reset the count.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">Dash Dance & Foxtrot Control</h3>
+            <p class="mb-2 text-gray-700">
+              Dash dance between two stage markers (e.g., platforms or ledge to center) while staying ready to
+              punish a phantom enemy. Don’t just wiggle — imagine reactable options.
+            </p>
+            <p class="text-xs text-gray-600">Goal: 60 seconds of clean, controlled movement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-5 mt-6">
+    <div class="max-w-5xl mx-auto px-4 text-center text-xs">
+      <p>Use these drills 3–5 days per week. Small, focused sessions beat long, mindless ones.</p>
+      <p class="mt-1">
+        <a href="../index.html" class="underline underline-offset-2 hover:text-white">← Back to SSBU Home</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
 
