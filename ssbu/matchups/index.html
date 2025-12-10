@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SSBU Matchup Lab | Esports Program</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold mb-2">SSBU Matchup Lab</h1>
+      <p class="text-slate-300">
+        Pick two characters to compare their <span class="font-semibold">strengths, weaknesses, and matchup dynamics.</span>
+      </p>
+    </header>
+
+    <!-- Controls -->
+    <section class="bg-slate-800/80 rounded-2xl p-4 md:p-6 mb-8 shadow-lg">
+      <div class="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-center">
+        <!-- Character A -->
+        <div>
+          <label for="charA" class="block text-sm font-semibold mb-1">Character A</label>
+          <select id="charA"
+                  class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-indigo-500">
+          </select>
+        </div>
+
+        <!-- Swap -->
+        <div class="flex flex-col items-center justify-center gap-2">
+          <button id="swapBtn"
+                  class="inline-flex items-center justify-center rounded-full border border-slate-600 px-3 py-2 text-xs md:text-sm hover:bg-slate-700 active:scale-95 transition">
+            ⇄ Swap
+          </button>
+          <button id="analyzeBtn"
+                  class="inline-flex items-center justify-center rounded-full bg-indigo-500 px-4 py-2 text-xs md:text-sm font-semibold hover:bg-indigo-400 active:scale-95 transition">
+            Analyze Matchup
+          </button>
+        </div>
+
+        <!-- Character B -->
+        <div>
+          <label for="charB" class="block text-sm font-semibold mb-1">Character B</label>
+          <select id="charB"
+                  class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-indigo-500">
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section id="summarySection" class="space-y-6">
+      <div id="overallSummary" class="bg-slate-800/80 rounded-2xl p-4 md:p-6 shadow-lg hidden">
+        <h2 class="text-xl font-semibold mb-2">Matchup Overview</h2>
+        <p id="overallText" class="text-sm md:text-base text-slate-200"></p>
+      </div>
+
+      <!-- Attribute Comparison -->
+      <div id="attributeComparison" class="bg-slate-800/80 rounded-2xl p-4 md:p-6 shadow-lg hidden">
+        <h3 class="text-lg font-semibold mb-3">Attribute Comparison</h3>
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead>
+              <tr class="text-left text-slate-300 border-b border-slate-700">
+                <th class="py-2 pr-4">Attribute</th>
+                <th class="py-2 pr-4" id="colAName">Character A</th>
+                <th class="py-2 pr-4" id="colBName">Character B</th>
+                <th class="py-2">Edge</th>
+              </tr>
+            </thead>
+            <tbody id="attributeBody" class="align-top"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Textual Breakdown -->
+      <div id="textBreakdown" class="bg-slate-800/80 rounded-2xl p-4 md:p-6 shadow-lg hidden">
+        <h3 class="text-lg font-semibold mb-3">Strengths & Weaknesses</h3>
+        <div class="grid md:grid-cols-2 gap-4 text-sm md:text-base">
+          <div>
+            <h4 class="font-semibold mb-1 text-emerald-300" id="strengthsATitle"></h4>
+            <ul id="strengthsA" class="list-disc list-inside text-slate-200"></ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1 text-rose-300" id="strengthsBTitle"></h4>
+            <ul id="strengthsB" class="list-disc list-inside text-slate-200"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Data -->
+  <script src="./character-data.js"></script>
+
+  <!-- Logic -->
+  <script>
+    const scoreMap = { low: 1, mid: 2, high: 3, top: 4 };
+    const labelMap = {
+      speed: "Speed",
+      range: "Range / Disjoints",
+      weight: "Weight / Survivability",
+      killpower: "Kill Power",
+      combo: "Combo Game",
+      mobility: "Mobility",
+      zoning: "Zoning / Projectiles",
+      recovery: "Recovery",
+      ledgetrap: "Ledge Trapping",
+      offstage: "Offstage / Edgeguarding"
+    };
+    const ATTR_KEYS = Object.keys(labelMap);
+
+    const charASelect = document.getElementById("charA");
+    const charBSelect = document.getElementById("charB");
+    const swapBtn = document.getElementById("swapBtn");
+    const analyzeBtn = document.getElementById("analyzeBtn");
+
+    const overallSummaryEl = document.getElementById("overallSummary");
+    const overallTextEl = document.getElementById("overallText");
+    const attributeComparisonEl = document.getElementById("attributeComparison");
+    const attributeBodyEl = document.getElementById("attributeBody");
+    const colANameEl = document.getElementById("colAName");
+    const colBNameEl = document.getElementById("colBName");
+
+    const textBreakdownEl = document.getElementById("textBreakdown");
+    const strengthsATitleEl = document.getElementById("strengthsATitle");
+    const strengthsBTitleEl = document.getElementById("strengthsBTitle");
+    const strengthsAEl = document.getElementById("strengthsA");
+    const strengthsBEl = document.getElementById("strengthsB");
+
+    function initSelects() {
+      const names = Object.keys(SSBU_CHAR_DATA).sort();
+      for (const name of names) {
+        const optA = document.createElement("option");
+        optA.value = name;
+        optA.textContent = name;
+        charASelect.appendChild(optA);
+
+        const optB = document.createElement("option");
+        optB.value = name;
+        optB.textContent = name;
+        charBSelect.appendChild(optB);
+      }
+      // Default matchup
+      charASelect.value = "Mario";
+      charBSelect.value = "Cloud";
+    }
+
+    function swapCharacters() {
+      const a = charASelect.value;
+      const b = charBSelect.value;
+      charASelect.value = b;
+      charBSelect.value = a;
+      runAnalysis();
+    }
+
+    function analyzeAttribute(attr, aData, bData) {
+      const aVal = scoreMap[aData[attr]] ?? 0;
+      const bVal = scoreMap[bData[attr]] ?? 0;
+      if (aVal > bVal) return "A";
+      if (bVal > aVal) return "B";
+      return "even";
+    }
+
+    function makeTag(text, type) {
+      const span = document.createElement("span");
+      span.textContent = text;
+      span.className =
+        "inline-flex items-center px-2 py-0.5 rounded-full text-[0.7rem] font-semibold " +
+        (type === "A"
+          ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+          : type === "B"
+          ? "bg-rose-500/20 text-rose-300 border border-rose-500/40"
+          : "bg-slate-700 text-slate-200 border border-slate-600");
+      return span;
+    }
+
+    function runAnalysis() {
+      const nameA = charASelect.value;
+      const nameB = charBSelect.value;
+      if (!nameA || !nameB || !SSBU_CHAR_DATA[nameA] || !SSBU_CHAR_DATA[nameB]) return;
+
+      const dataA = SSBU_CHAR_DATA[nameA];
+      const dataB = SSBU_CHAR_DATA[nameB];
+
+      colANameEl.textContent = nameA;
+      colBNameEl.textContent = nameB;
+
+      attributeBodyEl.innerHTML = "";
+      const strengthsA = [];
+      const strengthsB = [];
+      let scoreDiff = 0;
+
+      for (const key of ATTR_KEYS) {
+        const tr = document.createElement("tr");
+        tr.className = "border-b border-slate-800";
+
+        // Attribute label
+        const tdAttr = document.createElement("td");
+        tdAttr.className = "py-2 pr-4";
+        tdAttr.textContent = labelMap[key];
+
+        const tdA = document.createElement("td");
+        tdA.className = "py-2 pr-4";
+        tdA.textContent = dataA[key];
+
+        const tdB = document.createElement("td");
+        tdB.className = "py-2 pr-4";
+        tdB.textContent = dataB[key];
+
+        const tdEdge = document.createElement("td");
+        tdEdge.className = "py-2";
+
+        const result = analyzeAttribute(key, dataA, dataB);
+        if (result === "A") {
+          tdEdge.appendChild(makeTag(nameA, "A"));
+          strengthsA.push(labelMap[key]);
+          scoreDiff += (scoreMap[dataA[key]] ?? 0) - (scoreMap[dataB[key]] ?? 0);
+        } else if (result === "B") {
+          tdEdge.appendChild(makeTag(nameB, "B"));
+          strengthsB.push(labelMap[key]);
+          scoreDiff -= (scoreMap[dataB[key]] ?? 0) - (scoreMap[dataA[key]] ?? 0);
+        } else {
+          tdEdge.appendChild(makeTag("Even", "even"));
+        }
+
+        tr.appendChild(tdAttr);
+        tr.appendChild(tdA);
+        tr.appendChild(tdB);
+        tr.appendChild(tdEdge);
+        attributeBodyEl.appendChild(tr);
+      }
+
+      // Overall tilt
+      let tiltText;
+      const diffAbs = Math.abs(scoreDiff);
+      if (diffAbs <= 2) {
+        tiltText = `This matchup looks roughly even. Both ${nameA} and ${nameB} have tools to win neutral and convert advantage.`;
+      } else if (scoreDiff > 2 && scoreDiff <= 5) {
+        tiltText = `${nameA} seems to have a slight advantage. With better tools in key areas, ${nameB} has to play more carefully in neutral and disadvantage.`;
+      } else if (scoreDiff > 5) {
+        tiltText = `${nameA} appears favored in this matchup. Their kit outclasses ${nameB} in multiple important attributes (mobility, kill power, or advantage state).`;
+      } else if (scoreDiff < -2 && scoreDiff >= -5) {
+        tiltText = `${nameB} seems to have a slight advantage. ${nameA} needs stronger punish game or better counterpicks to keep it close.`;
+      } else {
+        tiltText = `${nameB} appears favored in this matchup. ${nameA} has to rely on strong reads, counterpicks, or player skill to pull it even.`;
+      }
+
+      overallTextEl.textContent = tiltText;
+      overallSummaryEl.classList.remove("hidden");
+      attributeComparisonEl.classList.remove("hidden");
+      textBreakdownEl.classList.remove("hidden");
+
+      strengthsATitleEl.textContent = `${nameA} key advantages`;
+      strengthsBTitleEl.textContent = `${nameB} key advantages`;
+      strengthsAEl.innerHTML = "";
+      strengthsBEl.innerHTML = "";
+
+      if (strengthsA.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "No clear attribute edge – must win with player skill, counterpicks, or specific tech.";
+        strengthsAEl.appendChild(li);
+      } else {
+        for (const s of strengthsA) {
+          const li = document.createElement("li");
+          li.textContent = s;
+          strengthsAEl.appendChild(li);
+        }
+      }
+
+      if (strengthsB.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "No clear attribute edge – must win with player skill, counterpicks, or specific tech.";
+        strengthsBEl.appendChild(li);
+      } else {
+        for (const s of strengthsB) {
+          const li = document.createElement("li");
+          li.textContent = s;
+          strengthsBEl.appendChild(li);
+        }
+      }
+    }
+
+    initSelects();
+    runAnalysis();
+
+    swapBtn.addEventListener("click", swapCharacters);
+    analyzeBtn.addEventListener("click", runAnalysis);
+  </script>
+</body>
+</html>
 
