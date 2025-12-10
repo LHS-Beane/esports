@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSBU Competitive Prep</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-gradient-to-r from-amber-500 via-red-600 to-slate-900 text-white shadow-lg">
+    <div class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold">SSBU Competitive Prep</h1>
+        <p class="text-xs md:text-sm opacity-80">Stage picks, game plans, stock trading, and mindset.</p>
+      </div>
+      <a href="../index.html"
+         class="hidden sm:inline-block text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full border border-white/30">
+        ← SSBU Home
+      </a>
+    </div>
+    <nav class="bg-black/30">
+      <div class="max-w-5xl mx-auto px-4 py-2 text-xs md:text-sm flex flex-wrap gap-2">
+        <a href="../index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Home</a>
+        <a href="../drills/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Drills</a>
+        <span class="px-3 py-1 rounded-full bg-amber-500 text-black font-semibold">Competitive Prep</span>
+        <a href="../vod/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">VOD Review</a>
+        <a href="../characters/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Character Lab</a>
+        <a href="../resources/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Resources</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Overview -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Tournament Mindset & Game Plan</h2>
+      <p class="text-sm text-gray-700 mb-3">
+        Being “good at friendlies” is not the same as being tournament ready. This page helps you build
+        a repeatable process for <span class="font-semibold">picks/bans, game 1 plans, stock trading,
+        and mental resets</span>.
+      </p>
+      <div class="grid md:grid-cols-3 gap-4 text-xs md:text-sm">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Before the Set</h3>
+          <ul class="space-y-1 text-gray-800">
+            <li>• Breathe and slow your thoughts.</li>
+            <li>• Decide your starter stage & character.</li>
+            <li>• Choose 1–2 goals (e.g., “ledge trap better”).</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">During the Set</h3>
+          <ul class="space-y-1 text-gray-800">
+            <li>• Track their habits at ledge & in disadvantage.</li>
+            <li>• Trade stocks smartly—don’t panic offstage.</li>
+            <li>• Stay aware of percent kill ranges.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">After the Set</h3>
+          <ul class="space-y-1 text-gray-800">
+            <li>• Write down 1 thing you did well.</li>
+            <li>• Write down 1 thing to practice later.</li>
+            <li>• If you lost, cool down before friendlies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stages -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Stage & Counterpick Planning</h2>
+      <p class="text-sm text-slate-200 mb-4">
+        Every character has stages that fit their game plan and stages that feel uncomfortable. Build a simple
+        “pick/ban” game plan so you’re never guessing at the setup screen.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-5 text-sm">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Your Stage Notes</h3>
+          <p class="text-slate-200 mb-2">For your main, list:</p>
+          <ul class="list-disc list-inside text-slate-100 space-y-1">
+            <li>2–3 favorite starter stages and why.</li>
+            <li>1–2 “comfort” counterpicks that fit your win condition.</li>
+            <li>1–2 stages you usually want to ban.</li>
+          </ul>
+          <p class="text-xs text-slate-400 mt-2">
+            Example: “Mario – Loves triplats for combo ladders, bans big flat stages vs zoners.”
+          </p>
+        </div>
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Opponent Stage Habits</h3>
+          <p class="text-slate-200 mb-2">
+            Pay attention to where certain archetypes like to go:
+          </p>
+          <ul class="list-disc list-inside text-slate-100 space-y-1">
+            <li>Swordies: strong on wide stages with room (PS2, Town & City).</li>
+            <li>Zoners: like big maps for space (Kalos, FD).</li>
+            <li>Combo characters: prefer platforms to extend strings.</li>
+          </ul>
+          <p class="text-xs text-slate-400 mt-2">
+            Use this to guide bans even if you don’t know their exact character matchup.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stock Trading -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Stock Trading & Risk Management</h2>
+      <p class="text-sm text-gray-700 mb-3">
+        “Stock trading” is about understanding when it’s worth taking a risk to close a stock, and when you need
+        to back off and keep your lead safe.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-5 text-sm text-gray-900">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">When to Push</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>You are behind a full stock and need a momentum shift.</li>
+            <li>Opponent is offstage with no jump.</li>
+            <li>You’ve identified a strong habit (e.g., always jump from ledge).</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-1">
+            These are moments where a bigger edgeguard or read can be reasonable.
+          </p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-1">When to Chill</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>You are up a full stock or more.</li>
+            <li>You’re at kill percent and they’re at low percent.</li>
+            <li>You’re in the corner and they are pressuring safely.</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-1">
+            Back up, reset center stage, and force them to take the first risk.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-match checklist -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Pre-Match Checklist</h2>
+      <p class="text-sm text-slate-200 mb-3">
+        Use this before each set to lock in and avoid playing on autopilot.
+      </p>
+
+      <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 text-sm">
+        <ol class="list-decimal list-inside space-y-1 text-slate-100">
+          <li>Deep breath in for 4 seconds, out for 4 seconds.</li>
+          <li>Decide which character you’re starting with.</li>
+          <li>Know your preferred starter stage (and what you want to ban).</li>
+          <li>Pick 1–2 focus goals (e.g., “ledge trap more patiently,” “respect their out-of-shield options”).</li>
+          <li>Remind yourself: you are here to learn, not just to win right now.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-5 mt-6">
+    <div class="max-w-5xl mx-auto px-4 text-center text-xs">
+      <p>Use this page before and after sets. Consistent process leads to consistent results.</p>
+      <p class="mt-1">
+        <a href="../index.html" class="underline underline-offset-2 hover:text-white">← Back to SSBU Home</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
 
