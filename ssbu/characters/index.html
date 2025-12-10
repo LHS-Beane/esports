@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSBU Character Lab</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-gradient-to-r from-emerald-500 via-sky-600 to-slate-900 text-white shadow-lg">
+    <div class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold">SSBU Character Lab</h1>
+        <p class="text-xs md:text-sm opacity-80">Define your main, secondaries, and matchup notes.</p>
+      </div>
+      <a href="../index.html"
+         class="hidden sm:inline-block text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full border border-white/30">
+        ← SSBU Home
+      </a>
+    </div>
+    <nav class="bg-black/30">
+      <div class="max-w-5xl mx-auto px-4 py-2 text-xs md:text-sm flex flex-wrap gap-2">
+        <a href="../index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Home</a>
+        <a href="../drills/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Drills</a>
+        <a href="../competitive/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Competitive Prep</a>
+        <a href="../vod/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">VOD Review</a>
+        <span class="px-3 py-1 rounded-full bg-emerald-400 text-black font-semibold">Character Lab</span>
+        <a href="../resources/index.html" class="px-3 py-1 rounded-full hover:bg-white/10">Resources</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Overview -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Your Character Identity</h2>
+      <p class="text-sm text-gray-700 mb-3">
+        Every varsity player should know exactly what their characters want, how they win, and where they are weak.
+        Use this page to write out your character knowledge so you can reference it before practice or tournaments.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-900">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Main</h3>
+          <p>Name: __________________________</p>
+          <p>Archetype: _____________________</p>
+          <p class="mt-2 text-xs text-gray-600">Example: Mario (all-rounder combo), Lucina (swordie), Joker (hybrid).</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Secondary</h3>
+          <p>Name: __________________________</p>
+          <p>Why you picked them: ____________</p>
+          <p class="mt-2 text-xs text-gray-600">Covers bad matchups, certain stages, or specific archetypes.</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Pocket / Fun Pick</h3>
+          <p>Name: __________________________</p>
+          <p>When to use: ___________________</p>
+          <p class="mt-2 text-xs text-gray-600">Use sparingly in serious competition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Character Template -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Character Worksheet Template</h2>
+      <p class="text-sm text-slate-200 mb-4">
+        Use this template for each character you play. You can copy it into a separate document or print it.
+      </p>
+
+      <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 text-sm space-y-3">
+        <p class="text-slate-100 font-semibold">Character: ______________________________</p>
+        <p class="text-slate-100 font-semibold">Archetype (check all that apply):</p>
+        <ul class="text-slate-100 text-xs list-disc list-inside space-y-1">
+          <li>□ Rushdown □ Zoner □ Swordie □ Grappler □ All-rounder □ Trap / Setup</li>
+        </ul>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Win Condition(s):</p>
+          <p class="text-xs text-slate-300">
+            How does this character usually close stocks and win games? (ledge traps, edgeguards, early combos, etc.)
+          </p>
+          <p class="text-slate-100 mt-1">______________________________________________</p>
+          <p class="text-slate-100">______________________________________________</p>
+        </div>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Key Neutral Tools:</p>
+          <p class="text-xs text-slate-300">
+            Example: safe aerials, projectiles, dash attack, grab, burst range moves.
+          </p>
+          <p class="text-slate-100 mt-1">______________________________________________</p>
+          <p class="text-slate-100">______________________________________________</p>
+        </div>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Bread-and-Butter Combos:</p>
+          <p class="text-xs text-slate-300">
+            List 2–3 key combos with approximate percent ranges.
+          </p>
+          <p class="text-slate-100 mt-1">Low %: _______________________________________</p>
+          <p class="text-slate-100">Mid %: ________________________________________</p>
+          <p class="text-slate-100">High % (kill): _________________________________</p>
+        </div>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Ledge Traps / Edgeguards:</p>
+          <p class="text-xs text-slate-300">
+            Describe your main ledge trap flowchart and safe edgeguard options.
+          </p>
+          <p class="text-slate-100 mt-1">______________________________________________</p>
+          <p class="text-slate-100">______________________________________________</p>
+        </div>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Recovery Plan:</p>
+          <p class="text-xs text-slate-300">
+            What are your low, mid, and high recoveries? How do you avoid getting 2-framed?
+          </p>
+          <p class="text-slate-100 mt-1">______________________________________________</p>
+          <p class="text-slate-100">______________________________________________</p>
+        </div>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Best Stages:</p>
+          <p class="text-xs text-slate-300">
+            2–3 comfort stages and why they work (platforms, blast zones, space).
+          </p>
+          <p class="text-slate-100 mt-1">______________________________________________</p>
+          <p class="text-slate-100">______________________________________________</p>
+        </div>
+
+        <div>
+          <p class="text-slate-100 font-semibold mt-2">Worst Stages / Matchups:</p>
+          <p class="text-xs text-slate-300">
+            What feels hardest and what secondary might help cover it?
+          </p>
+          <p class="text-slate-100 mt-1">______________________________________________</p>
+          <p class="text-slate-100">______________________________________________</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example snippet -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-7 md:py-9 text-sm text-gray-900">
+      <h2 class="text-lg md:text-2xl font-semibold mb-3">Example (Mario)</h2>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 space-y-2">
+        <p><span class="font-semibold">Win Condition:</span> Get a grab or up-tilt at low/mid %, push to platforms,
+          then ledge trap or edgeguard. Kill with up-smash, back-air, or fair spikes.</p>
+        <p><span class="font-semibold">Key Neutral Tools:</span> Fireball for approach/conditioning, short hop nair,
+          back-air, dash grab.</p>
+        <p><span class="font-semibold">Bread-and-Butter:</span> d-throw → uair chains, up-tilt strings at low %,
+          nair → up-smash as a kill confirm.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-300 py-5 mt-6">
+    <div class="max-w-5xl mx-auto px-4 text-center text-xs">
+      <p>Knowing your character deeply is a shortcut to consistency in bracket.</p>
+      <p class="mt-1">
+        <a href="../index.html" class="underline underline-offset-2 hover:text-white">← Back to SSBU Home</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
 
