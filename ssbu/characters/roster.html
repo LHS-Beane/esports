@@ -1,1 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SSBU Competitive Roster | Louisville Esports</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- HEADER -->
+  <header class="p-6 bg-gray-800 shadow-lg">
+    <h1 class="text-3xl font-bold text-center">Super Smash Bros. Ultimate — Competitive Character Roster</h1>
+    <p class="text-center text-gray-300 mt-2">Varsity-level character breakdowns for Louisville High School Esports</p>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="max-w-2xl mx-auto mt-6 px-4">
+    <input
+      id="searchBar"
+      type="text"
+      placeholder="Search characters..."
+      class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+  </div>
+
+  <!-- ROSTER CONTAINER -->
+  <div id="rosterContainer" class="max-w-4xl mx-auto mt-8 px-4 space-y-4">
+
+    <!-- CHARACTER BLOCKS GO HERE -->
+    <details class="character-block bg-gray-800 rounded-xl p-4" data-name="Banjo & Kazooie">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/3d/Banjo_%26_Kazooie_SSBU.png/120px-Banjo_%26_Kazooie_SSBU.png"
+         alt="Banjo & Kazooie" class="w-12 h-12 rounded">
+    Banjo & Kazooie
+  </summary>
+
+  <!-- Local portrait option:
+  <img src="/ssbu/media/portraits/banjo.png" class="w-16 h-16 mt-2">
+  -->
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Mid-range zoner with burst options, strong survivability, and limited but powerful resources.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Nair:</strong> Fast get-off-me tool; great defensive aerial.</li>
+      <li><strong>Fair:</strong> Strong kill move; slow but devastating.</li>
+      <li><strong>Bair:</strong> Quick multi-hit; great for spacing.</li>
+      <li><strong>Uair:</strong> Combo finisher and juggle tool.</li>
+      <li><strong>Dair:</strong> Double downward hit; risky but powerful spike.</li>
+      <li><strong>FTilt:</strong> Disjointed kick for spacing.</li>
+      <li><strong>UTilt:</strong> Anti-air with good KO power.</li>
+      <li><strong>DTilt:</strong> Trip setups into grab.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Neutral B — Egg Firing:</strong> Zoning tool; can be used as pressure.</li>
+      <li><strong>Side B — Wonderwing:</strong> Limited armor burst; kills extremely early.</li>
+      <li><strong>Up B — Shock Spring Jump:</strong> Vertical recovery; trap setups possible.</li>
+      <li><strong>Down B — Rear Egg:</strong> Grenade that enables combos and ledge traps.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Fair, UTilt, Wonderwing, FSmash, Uair, Side-B (low %).</p>
+
+    <h3 class="font-semibold text-lg">Out-of-Shield Options</h3>
+    <p>Nair (fastest), Grab, Wonderwing (reads), Uair (if opponent is above).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Grenade traps, Uair juggling, ledge trapping with egg + bair.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Strong vertical recovery; mix jump + Up B. Wonderwing can bypass edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Beginner → Advanced Tech</h3>
+    <ul class="list-disc ml-6">
+      <li>Basic: Grenade → grab confirms.</li>
+      <li>Intermediate: Egg juggle extensions.</li>
+      <li>Advanced: Grenade drop combos, platform tech traps.</li>
+    </ul>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Bayonetta">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/f/f5/Bayonetta_SSBU.png/120px-Bayonetta_SSBU.png"
+         alt="Bayonetta" class="w-12 h-12 rounded">
+    Bayonetta
+  </summary>
+
+  <!-- Local:
+  <img src="/ssbu/media/portraits/bayonetta.png" class="w-16 h-16 mt-2">
+  -->
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Air combo specialist with strong mobility, edgeguarding, and ladder strings. Weak kill power without confirms.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Nair:</strong> Quick multi-hit; safe pressure tool.</li>
+      <li><strong>Fair:</strong> Combo part + edgeguard finisher.</li>
+      <li><strong>Bair:</strong> Strong kill move.</li>
+      <li><strong>Uair:</strong> Main ladder tool.</li>
+      <li><strong>Dair:</strong> Downward heel drop—spike hitbox.</li>
+      <li><strong>Tilts:</strong> Used to start strings and punish landings.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Neutral B — Bullet Arts:</strong> Chip damage; cancels landing lag.</li>
+      <li><strong>Side B — After Burner Kick:</strong> Main combo starter.</li>
+      <li><strong>Up B — Witch Twist:</strong> Vertical combo extender.</li>
+      <li><strong>Down B — Witch Time:</strong> Counter that slows opponent.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, DSmash, ABK → Fair, Witch Time punishes, Uair at high %.</p>
+
+    <h3 class="font-semibold text-lg">Out-of-Shield Options</h3>
+    <p>Witch Twist (frame 4), Up Tilt, Nair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Ladder combos, offstage fair strings, ABK frame traps.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Multiple specials allow huge distance but predictable paths.</p>
+
+    <h3 class="font-semibold text-lg">Beginner → Advanced Tech</h3>
+    <ul class="list-disc ml-6">
+      <li>Basic: ABK → Uair.</li>
+      <li>Intermediate: Double ABK extensions.</li>
+      <li>Advanced: DI tracking ladders, ABK platform resets.</li>
+    </ul>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Bowser">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/1/18/Bowser_SSBU.png/120px-Bowser_SSBU.png"
+         alt="Bowser" class="w-12 h-12 rounded">
+    Bowser
+  </summary>
+
+  <!-- Local:
+  <img src="/ssbu/media/portraits/bowser.png" class="w-16 h-16 mt-2">
+  -->
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Heavyweight grappler with massive kill power, strong OOS options, and terrifying pressure.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Nair:</strong> Great combo breaker.</li>
+      <li><strong>Fair:</strong> Strong aerial that kills early.</li>
+      <li><strong>Bair:</strong> One of his best kill moves.</li>
+      <li><strong>Uair:</strong> Anti-air KO option.</li>
+      <li><strong>Dair:</strong> Drop kick; punish tool.</li>
+      <li><strong>FTilt:</strong> Insane power; ledge-tool.</li>
+      <li><strong>Jab:</strong> Frame 4; good pressure.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Neutral B — Flame Breath:</strong> 0–50% damage builder.</li>
+      <li><strong>Side B — Flying Slam:</strong> Command grab that kills early.</li>
+      <li><strong>Up B — Whirling Fortress:</strong> Frame 6 OOS option.</li>
+      <li><strong>Down B — Bowser Bomb:</strong> Hard read option.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Side-B, Uair, FSmash, FTilt, Fair.</p>
+
+    <h3 class="font-semibold text-lg">Out-of-Shield Options</h3>
+    <p>Up B (frame 6), Nair, Grab.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Flame breath ledge trap, FTilt at ledge, Uair juggles.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Predictable but armor helps. Mix drift + Up-B angles.</p>
+
+    <h3 class="font-semibold text-lg">Beginner → Advanced Tech</h3>
+    <ul class="list-disc ml-6">
+      <li>Basic: Flame breath → grab.</li>
+      <li>Intermediate: Tomahawk Side-B.</li>
+      <li>Advanced: Platform Side-B kills, DI mixups.</li>
+    </ul>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Bowser Jr.">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/3e/Bowser_Jr._SSBU.png/120px-Bowser_Jr._SSBU.png"
+         alt="Bowser Jr." class="w-12 h-12 rounded">
+    Bowser Jr.
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Trap-based character using Mechakoopa, cannonballs, and strong side-B for burst.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Good combo starter.</li>
+      <li>Fair: Disjoint; spacing tool.</li>
+      <li>Bair: Fast; good edgeguard.</li>
+      <li>Uair: Juggle tool.</li>
+      <li>Dair: Multi-hit pressure.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Neutral B — Cannonball.</li>
+      <li>Side B — Clown Kart Dash (burst kill).</li>
+      <li>Up B — Abandon Ship.</li>
+      <li>Down B — Mechakoopa (combo engine).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Side-B impact, Up Smash, Fair at high %, Uair juggles.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B hitbox, Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Mechakoopa traps, platform combos, cannonball + dash pressure.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good distance but linear after pop-out.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Byleth">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/e/ee/Byleth_SSBU.png/120px-Byleth_SSBU.png"
+         alt="Byleth" class="w-12 h-12 rounded">
+    Byleth
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Slow but powerful mid-range character with huge disjoints.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Best neutral tool.</li>
+      <li>Fair/Bair: Massive kill disjoints.</li>
+      <li>Uair: Juggling & early kills.</li>
+      <li>Dair: Spikes and shield breaks.</li>
+      <li>FTilt: Safe mid-range poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Neutral B — Failnaught (charge). Kills.</li>
+      <li>Side B — Areadbhar whip. Spacing tool.</li>
+      <li>Up B — Hook grab. Edgeguard finisher.</li>
+      <li>Down B — Counter stance.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Fair, Bair, Uair, FSmash, Down B, Neutral B charged.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up B (fast grab), Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Bair ledge trap, Uair juggle, Up-B drag downs.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Up B tether mixups; vulnerable if predictable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Captain Falcon">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/4/40/Captain_Falcon_SSBU.png/120px-Captain_Falcon_SSBU.png"
+         alt="Captain Falcon" class="w-12 h-12 rounded">
+    Captain Falcon
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Explosive rushdown with devastating combos, but suffers offstage.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Best combo starter.</li>
+      <li>Uair: Combo extender + juggle.</li>
+      <li>Bair: Kill move and spacing tool.</li>
+      <li>Fair: Knee — precise but deadly.</li>
+      <li>Dair: Spike.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Raptor boost (ground = combo; air = spike).</li>
+      <li>Neutral B — Falcon punch (hard reads).</li>
+      <li>Up B — Command grab.</li>
+      <li>Down B — Falcon kick (escape mixup).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Knee, DSmash, Raptor Boost, Uair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Up B (grab punish).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Uair ladders, knee confirms, ledge trapping with bair.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Weak recovery; mix drift and early up-B.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Chrom">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/0/0c/Chrom_SSBU.png/120px-Chrom_SSBU.png"
+         alt="Chrom" class="w-12 h-12 rounded">
+    Chrom
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Swordfighter with fast frame data and deadly ledge trapping. Weak recovery.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Best neutral tool.</li>
+      <li>Fair/Bair: Walling & kill options.</li>
+      <li>Uair: Juggling & anti-air.</li>
+      <li>Dair: Spike hitbox.</li>
+      <li>DTilt: Low-profile poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Dancing Blade: burst + kill.</li>
+      <li>Up B — Soaring Slash: kills off top; bad recovery.</li>
+      <li>Neutral B — Shield Breaker.</li>
+      <li>Down B — Counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Up-B, FSmash, Fair, Uair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up-B (fast), Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Ledge trapping with fair/bair, Uair juggles.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Very gimpable. Must mix early Up-B.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Cloud">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/1/14/Cloud_SSBU.png/120px-Cloud_SSBU.png"
+         alt="Cloud" class="w-12 h-12 rounded">
+    Cloud
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Top-tier mid-range swordie with strong limit pressure and amazing aerials.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: all-purpose tool.</li>
+      <li>Fair: long disjoint.</li>
+      <li>Bair: spacing & kills.</li>
+      <li>Uair: juggling monster.</li>
+      <li>Dair: spike → shield poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Neutral B — Blade Beam (limit kills).</li>
+      <li>Side B — Cross Slash (limit version kills early).</li>
+      <li>Up B — Climhazzard (limit increases recovery).</li>
+      <li>Down B — Limit Charge.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Uair, Limit cross slash, DSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B (frame 7), Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Bair ledge trapping, uair juggles, limit pressure.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Predictable unless limit is active—stalls with blade beam.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Corrin">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/0/06/Corrin_SSBU.png/120px-Corrin_SSBU.png"
+         alt="Corrin" class="w-12 h-12 rounded">
+    Corrin
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Safe disjoint swordie with extremely strong ledge trapping and aerial pressure.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Safe, starts combos.</li>
+      <li>Fair/Bair: Long disjoints.</li>
+      <li>Uair: Anti-air + KO.</li>
+      <li>Dair: Landing mixup.</li>
+      <li>FTilt/UTilt: Safe pokes.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Pin: Ledgetrap machine.</li>
+      <li>Neutral B — Charge shot (kills early).</li>
+      <li>Up B — Excellent recovery.</li>
+      <li>Down B — Counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Pin kick, FSmash, Uair, Neutral B fully charged.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up B, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Pin at ledge, Uair juggles, disjoint walling.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Great vertical & horizontal range—rarely gimped.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Daisy">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/4/48/Daisy_SSBU.png/120px-Daisy_SSBU.png"
+         class="w-12 h-12 rounded">
+    Daisy
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Float-based combo queen with huge damage output and edgeguarding power. High execution.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Float Fair: Early kills.</li>
+      <li>Nair: Combo finisher + OOS.</li>
+      <li>Bair: Spacing tool.</li>
+      <li>Dair: Combo starter.</li>
+      <li>Uair: Juggles and kills.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Neutral B — Toad counter.</li>
+      <li>Side B — Butt Slam (burst + kill).</li>
+      <li>Up B — Parasol (good recovery).</li>
+      <li>Down B — Turnips (core neutral).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Float Fair, Bair, Side-B, Uair, Turnip confirms.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair (fastest), Up-B, Fair out of float.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Turnip ledge traps, float mixups, Dair → Fair.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Float stalls + parasol angles make her slippery.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Dark Pit">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/39/Dark_Pit_SSBU.png/120px-Dark_Pit_SSBU.png"
+         class="w-12 h-12 rounded">
+    Dark Pit
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> All-rounder with strong aerials and excellent juggling. Side-B kills early.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Safe neutral tool.</li>
+      <li>Fair/Bair: Good spacing.</li>
+      <li>Uair: One of the best juggling moves.</li>
+      <li>Dair: Spike hitbox.</li>
+      <li>FTilt/UTilt: Solid pokes.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Electroshock: kills absurdly early.</li>
+      <li>Neutral B — Arrows.</li>
+      <li>Up B — Great recovery.</li>
+      <li>Down B — Reflector.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Side-B, Bair, Uair, FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Uair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Uair juggles, Side-B punishes, arrow snipes.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Up B has great vertical height but limited horizontal drift.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Dark Samus">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/2/2f/Dark_Samus_SSBU.png/120px-Dark_Samus_SSBU.png"
+         class="w-12 h-12 rounded">
+    Dark Samus
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Long-range zoner with strong projectiles and powerful charge shot confirms.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Excellent OOS.</li>
+      <li>Fair/Bair: Long range aerials.</li>
+      <li>Uair: Juggles & kills.</li>
+      <li>Dair: Meteor on startup.</li>
+      <li>FTilt: Great spacing.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Charge Shot — core kill tool.</li>
+      <li>Missiles — zoning mixups.</li>
+      <li>Bombs — ledge traps.</li>
+      <li>Up B — fast OOS.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Charge Shot, Bair, Uair, FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up B (frame 4), Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Bomb ledge traps, Charge Shot conditioning, juggling with uair.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Very safe recovery with bomb stalls.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Diddy Kong">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/a/a2/Diddy_Kong_SSBU.png/120px-Diddy_Kong_SSBU.png"
+         class="w-12 h-12 rounded">
+    Diddy Kong
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Top-tier neutral control with banana peel. Amazing combos & ledge trapping.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Combo starter.</li>
+      <li>Fair: Safe + fast.</li>
+      <li>Bair: Kill move + spacing.</li>
+      <li>Dair: Spike.</li>
+      <li>Uair: Confirm tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Monkey Flip (mixup).</li>
+      <li>Neutral B — Peanut Popgun.</li>
+      <li>Down B — Banana peel (win neutral).</li>
+      <li>Up B — Rocket Barrel (tricky recovery).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, FSmash, Up Smash, banana → smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Fair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Banana vortex, Monkey Flip grabs, ledge trapping.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Rocket barrel is gimpable but has long distance.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Donkey Kong">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/0/09/Donkey_Kong_SSBU.png/120px-Donkey_Kong_SSBU.png"
+         class="w-12 h-12 rounded">
+    Donkey Kong
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Grappler with terrifying kill confirms and strong advantage state. Weak disadvantage.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Fast for a heavy.</li>
+      <li>Bair: Best spacing tool.</li>
+      <li>Uair: Kill move.</li>
+      <li>Dair: Spike.</li>
+      <li>FTilt/DTilt: Footsie tools.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Headbutt bury.</li>
+      <li>Neutral B — Giant punch (kills early).</li>
+      <li>Up B — Spinning Kong (OOS).</li>
+      <li>Down B — Ground slap (tech chase).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Uair, Giant Punch, cargo throw mixups.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B, Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Platform cargo throws, tech chases, bair walls.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good horizontal drift; weak vertically.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Dr. Mario">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/f/fd/Dr._Mario_SSBU.png/120px-Dr._Mario_SSBU.png"
+         class="w-12 h-12 rounded">
+    Dr. Mario
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Hard-hitting brawler with strong burst kills and bad recovery.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Amazing combo breaker.</li>
+      <li>Fair: Meteor smash.</li>
+      <li>Uair: Kill setups.</li>
+      <li>Bair: Reliable kill move.</li>
+      <li>FTilt/UTilt: Anti-air tools.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Pills — zoning.</li>
+      <li>Tornado — high damage.</li>
+      <li>Up B — kill move & OOS.</li>
+      <li>Down B — cape.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Up-B, Bair, Fair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up-B (frame 3), Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Pill → grab, Up-B punishes, juggle with uair.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Very weak. Needs careful resource saving.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Duck Hunt">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/b/b9/Duck_Hunt_SSBU.png/120px-Duck_Hunt_SSBU.png"
+         class="w-12 h-12 rounded">
+    Duck Hunt
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Zoner with can traps, clay pigeon confirms, and strong team utility.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Multi-hit; combo tool.</li>
+      <li>Fair: Spacing.</li>
+      <li>Bair: Kill option.</li>
+      <li>Uair: Juggles.</li>
+      <li>Dair: stall.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Clay pigeon (kill confirms).</li>
+      <li>Neutral B — Trick Shot (can trap).</li>
+      <li>Up B — Duck jump.</li>
+      <li>Down B — Gunmen.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, clay confirms, can explosions.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Can ledge traps, clay strings, up-air juggles.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good height, weak hitbox; watch snipes.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Falco">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/0/0c/Falco_SSBU.png/120px-Falco_SSBU.png"
+         class="w-12 h-12 rounded">
+    Falco
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Combo-heavy character with strong vertical strings and reflective utility.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Cross-up pressure.</li>
+      <li>Fair: Drag-down sets up combos.</li>
+      <li>Uair: Combo finisher.</li>
+      <li>Bair: Kill move.</li>
+      <li>Dair: Spike starter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Laser — zoning.</li>
+      <li>Side B — Burst approach.</li>
+      <li>Up B — Kill option offstage.</li>
+      <li>Reflector — anti-projectile.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Up Tilt → Uair, DSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up Tilt, Nair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Up-tilt ladders, drag-down fair, platform extensions.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Side-B predictable; mix drift and double jump.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Fox">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/7/72/Fox_SSBU.png/120px-Fox_SSBU.png"
+         class="w-12 h-12 rounded">
+    Fox
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Top-tier rushdown with insane speed, tight combos, and oppressive ledge pressure.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Combo starter + kill confirm.</li>
+      <li>Uair: KO move.</li>
+      <li>Bair: Great spacing.</li>
+      <li>Dair: Landing mixup.</li>
+      <li>FTilt: Quick poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Burst movement.</li>
+      <li>Up B — Kill potential.</li>
+      <li>Down B — Reflector.</li>
+      <li>Neutral B — Laser chip.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Uair, Up Smash, Nair → Up Smash, Bair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up Smash, Nair, Up Tilt.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Ledgetrap dash attack, up-air juggles, frame traps.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Two-part recovery—high angles beat edgeguards.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Game & Watch">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/3f/Mr._Game_%26_Watch_SSBU.png/120px-Mr._Game_%26_Watch_SSBU.png"
+         class="w-12 h-12 rounded">
+    Mr. Game & Watch
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Light character with insane OOS Up-B and strong edgeguarding.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Combo starter.</li>
+      <li>Fair: Bomb drop spacing.</li>
+      <li>Bair: Turtle wall.</li>
+      <li>Dair: Key spike.</li>
+      <li>Uair: Juggles.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Up-B — Best OOS in the game.</li>
+      <li>Bucket — absorbs projectiles.</li>
+      <li>Chef — ledge trap tool.</li>
+      <li>Judgement — random kill potential.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Up Smash (invincible), Bair, Dair, FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up-B, Up Smash, Nair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Dair spikes, Chef ledge traps, Up-Air ladders.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Excellent but linear; bucket stall helps.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Ganondorf">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/5/5b/Ganondorf_SSBU.png/120px-Ganondorf_SSBU.png"
+         class="w-12 h-12 rounded">
+    Ganondorf
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> High-risk powerhouse with early kills but terrible disadvantage.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Best neutral tool.</li>
+      <li>Fair/Bair: Huge power.</li>
+      <li>Uair: Good anti-air.</li>
+      <li>Dair: Devastating spike.</li>
+      <li>DTilt: Tech chase.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Command grab.</li>
+      <li>Neutral B — Warlock Punch.</li>
+      <li>Up B — Grab recovery.</li>
+      <li>Down B — Burst movement.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Everything. FSmash kills at 20–40%. Fair, Bair, Uair, Up Tilt.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up-B grab, Up Smash (slow).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>DTilt tech chase, dair edgeguards, side-b mixups.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>One of the worst in the game—hug stage.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Greninja">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/6/6b/Greninja_SSBU.png/120px-Greninja_SSBU.png"
+         class="w-12 h-12 rounded">
+    Greninja
+  </summary>
+
+  <div class="mt-4 space-y-3">
+
+    <p><strong>Role Summary:</strong> Fast, slippery rushdown with great dash attack combos and strong edgeguarding.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Dash Attack — core combo starter.</li>
+      <li>Nair — extensions.</li>
+      <li>Fair — kill move.</li>
+      <li>Uair — juggling.</li>
+      <li>Dair — stall + spike.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Shadow Sneak (kill mixup).</li>
+      <li>Neutral B — Water Shuriken (great for edgeguarding).</li>
+      <li>Up B — Versatile recovery.</li>
+      <li>Down B — Substitute counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Fair, Up Smash, Shadow Sneak, dash attack → up smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Air, Up Smash (situational).</p>
+
+    <h3 class-semibold text-lg">Advantage Tools</h3>
+    <p>Hydro-pump gimps, dash attack ladders, platform extensions.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Very flexible but gimpable early.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Hero">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/c/c4/Hero_SSBU.png/120px-Hero_SSBU.png"
+         class="w-12 h-12 rounded">
+    Hero
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> RNG-heavy swordfighter with strong projectiles, buffs, and early-kill potential.</p>
+
+    <h3 class="font-semibold text-lg">Key Normals</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Long-lasting; good panic button.</li>
+      <li>Fair: Strong disjoint + kill tool.</li>
+      <li>Bair: One of his best kill moves.</li>
+      <li>Uair: Juggles well.</li>
+      <li>Dair: Landing mixup; spike.</li>
+      <li>FTilt: Safe poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Neutral B — Frizz line: strong projectile.</li>
+      <li>Side B — Zap line: disjoint burst.</li>
+      <li>Up B — Woosh line: recovery tool.</li>
+      <li>Down B — Command Menu (buffs, thwack, hocus pocus, etc.).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Fair, Up Smash, Zapple, Crit FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up B, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Buff stacking, projectile ledge traps, platform extensions.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Can mix height with Woosh variations; can be sniped.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Ice Climbers">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/5/5a/Ice_Climbers_SSBU.png/120px-Ice_Climbers_SSBU.png"
+         class="w-12 h-12 rounded">
+    Ice Climbers
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Desync combo monsters with strong kill confirms, but lose power when Nana is KO'd.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Combo starter.</li>
+      <li>Uair: Kill tool.</li>
+      <li>Bair: Solid spacing.</li>
+      <li>Dair: Drag-down setups.</li>
+      <li>Tilts: Good pokes.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Squall Hammer (movement).</li>
+      <li>Neutral B — Ice Shot (projectile control).</li>
+      <li>Up B — Recover tether style.</li>
+      <li>Down B — Blizzard (combo/burst).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Uair, Smash attacks, Blizzard → Smash, desync combos.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Up B (escape).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Desync pressure, blizzard walls, jab locks.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good when both are alive; terrible when Popo is alone.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Ike">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/b/b5/Ike_SSBU.png/120px-Ike_SSBU.png"
+         class="w-12 h-12 rounded">
+    Ike
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Heavy, slow swordie with huge hitboxes and reliable kill confirms.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: His entire kit—combo starter & kill confirm.</li>
+      <li>Fair: Disjointed wall.</li>
+      <li>Bair: Kill move.</li>
+      <li>Uair: Massive kill hitbox.</li>
+      <li>Dair: Spike / landing mixup.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Quick Draw.</li>
+      <li>Neutral B — Eruption.</li>
+      <li>Up B — Aether (good OOS).</li>
+      <li>Down B — Counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Uair, Bair, Nair → Uair, FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B, Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Nair pressure, platform extensions, ledge trapping.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Predictable; vulnerable to spikes & gimps.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Incineroar">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/9/98/Incineroar_SSBU.png/120px-Incineroar_SSBU.png"
+         class="w-12 h-12 rounded">
+    Incineroar
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Grappler with explosive kill power and terrifying revenge mechanic.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Combo starter.</li>
+      <li>Bair: Kill option.</li>
+      <li>Fair: Good for spacing.</li>
+      <li>Uair: Juggles.</li>
+      <li>DTilt: Trip → grab.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Alolan Whip (kill confirms).</li>
+      <li>Down B — Revenge (damage multiplier).</li>
+      <li>Up B — Recovery (grabbable).</li>
+      <li>Neutral B — Darkest Lariat.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Side-B lariat finisher, Bair, Up Smash, Uair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Up B (escape).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Revenge punishes, command grab mixups, edgeguards with dair.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Very weak—must recover low & hug the wall.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Inkling">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/8/88/Inkling_SSBU.png/120px-Inkling_SSBU.png"
+         class="w-12 h-12 rounded">
+    Inkling
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Fast hit-and-run character with ink damage multiplier and great neutral.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Combo tool.</li>
+      <li>Fair: Spacing.</li>
+      <li>Uair: KO potential.</li>
+      <li>Bair: Kill move.</li>
+      <li>Roller: Bury → smash attack.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Roller (win neutral).</li>
+      <li>Neutral B — Splattershot.</li>
+      <li>Up B — Good recovery.</li>
+      <li>Down B — Splat Bomb (ledgetrap).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Uair, Roller → smash, Up Throw → Uair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Up B.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Bomb ledgetrap, ink multiplier, dash dance pressure.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good mix of vertical & horizontal range.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Isabelle">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/2/29/Isabelle_SSBU.png/120px-Isabelle_SSBU.png"
+         class="w-12 h-12 rounded">
+    Isabelle
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Trap-based zoner with fishing rod kill confirms and strong ledge setups.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Fair/Bair: Slingshot zoning.</li>
+      <li>Nair: Fast aerial.</li>
+      <li>Dair: Cement bag spike.</li>
+      <li>FTilt: Safe poke.</li>
+      <li>Uair: Juggles lightly.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Lloyd Mine — trap tool.</li>
+      <li>Fishing Rod — grab from afar.</li>
+      <li>Pocket — stealin’ projectiles.</li>
+      <li>Up B — Balloon Trip recovery.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Fishing rod throw, FSmash, up-air.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Mine traps, slingshot edgeguards, pocket punishment.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good distance but easy to snipe.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Jigglypuff">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/d/dc/Jigglypuff_SSBU.png/120px-Jigglypuff_SSBU.png"
+         class="w-12 h-12 rounded">
+    Jigglypuff
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Airborne mixup/edgeguard specialist with strong aerial drift and rest confirms.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Safe aerial.</li>
+      <li>Fair/Bair: Core spacing tools.</li>
+      <li>Uair: Juggles.</li>
+      <li>Dair: Rest setups.</li>
+      <li>FTilt: Poke tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Rollout — situational.</li>
+      <li>Rest — strong punish.</li>
+      <li>Sing — shield break setups.</li>
+      <li>Pound — combo starter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Rest, Bair, Fair at high %, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Rest (hard reads).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Offstage gimps, pound confirms, dair → rest.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h>
+    <p>Best drift in game; no vertical burst.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Joker">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/2/23/Joker_SSBU.png/120px-Joker_SSBU.png"
+         class="w-12 h-12 rounded">
+    Joker
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Top-tier with quick normals, combos, ledge trapping, and Arsene-powered kills.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Frame fast.</li>
+      <li>Bair: Arsene bair = top 5 kill move.</li>
+      <li>Fair: Combo starter.</li>
+      <li>Uair: Juggle tool.</li>
+      <li>Dair (Arsene): Spike.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Neutral B — Gun (great landing).</li>
+      <li>Side B — Eiha/Eigaon (damage-over-time).</li>
+      <li>Down B — Rebel’s Guard (Arsene meter).</li>
+      <li>Up B — Grapple Hook.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Arsene bair, FSmash, Dair spike, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Uair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Gun movement, arsene edgeguards, fair chains.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Grapple is long; predictable angle.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Kazuya">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/7/78/Kazuya_SSBU.png/120px-Kazuya_SSBU.png"
+         class="w-12 h-12 rounded">
+    Kazuya
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> DLC boss character with command grabs, armor, and 0-to-death potential.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>EWGF — Frame 6 kill move.</li>
+      <li>Nair — Combo starter.</li>
+      <li>Uair — Juggle.</li>
+      <li>Bair — Spacing.</li>
+      <li>FTilt — Anti-air.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B — Electric Wind God Fist (EWGF).</li>
+      <li>Neutral B — Laser.</li>
+      <li>Down B — Reflector.</li>
+      <li>Up B — Rising Uppercut.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>EWGF, FSmash, Rage Drive, Uair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up-B, Nair, 10-hit combo (slow).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Electric → up air strings, command grabs, armor moves.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Linear; must angle diagonally to mix.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Ken">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/0/09/Ken_SSBU.png/120px-Ken_SSBU.png"
+         class="w-12 h-12 rounded">
+    Ken
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Traditional fighter with strong close-range pressure and kill confirms.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Good starter.</li>
+      <li>Fair: Spacing.</li>
+      <li>Bair: Safe on shield.</li>
+      <li>Uair: Juggles.</li>
+      <li>Dair: Spike.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Hadoken — pressure.</li>
+      <li>Tatsumaki — combo.</li>
+      <li>Shoryuken — kill confirm.</li>
+      <li>Focus Attack — armor + punish.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Shoryuken, jab → shoryu, bair, DSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Shoryuken, Nair, Up Tilt.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Frame traps, focus armor, jab locks.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Predictable; tatsu can be stuffed.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="King Dedede">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/7/7d/King_Dedede_SSBU.png/120px-King_Dedede_SSBU.png"
+         class="w-12 h-12 rounded">
+    King Dedede
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Heavyweight zoner with Gordo traps and massive survivability.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Huge coverage.</li>
+      <li>Bair: Kill tool.</li>
+      <li>Fair: Spacing.</li>
+      <li>Uair: Juggles.</li>
+      <li>Dair: Landing mix.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Gordo — ledge traps.</li>
+      <li>Inhale — anti-shield.</li>
+      <li>Up B — super armor recovery.</li>
+      <li>Jet Hammer — situational.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Up-Air, FSmash, Gordo at ledge.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Up B.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Gordo vortex, bair walls, platform juggles.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Armor helps but slow and punishable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="King K. Rool">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/32/King_K._Rool_SSBU.png/120px-King_K._Rool_SSBU.png"
+         class="w-12 h-12 rounded">
+    King K. Rool
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Heavyweight zoner with armor, strong recovery, and unique projectile setups.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Covers all around.</li>
+      <li>Bair: Kill move.</li>
+      <li>Fair: Armor poke.</li>
+      <li>Dair: Spike.</li>
+      <li>Uair: Kill option.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Crown toss — boomerang control.</li>
+      <li>Blunderbuss — vacuum shot.</li>
+      <li>Up B — excellent recovery.</li>
+      <li>Down B — super armor counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Uair, DSmash, crown bounce confirms.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Grab.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Crown ledgetrap, gun vortex, armor trades.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Top-tier vertical recovery.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Kirby">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/e/e8/Kirby_SSBU.png/120px-Kirby_SSBU.png"
+         class="w-12 h-12 rounded">
+    Kirby
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Lightweight with strong edgeguards, copy abilities, and disjointed tilts.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair: Fast.</li>
+      <li>Fair: Combo starter.</li>
+      <li>Bair: Kill move.</li>
+      <li>Dair: Spike.</li>
+      <li>Uair: Juggle.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Inhale — copy move.</li>
+      <li>Hammer — kill option.</li>
+      <li>Final Cutter — recovery + ledge option.</li>
+      <li>Stone — stall + punish.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Up Smash, Hammer, DSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Offstage gimps, dair landing traps, copy ability usage.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good vertical recovery; slow and punishable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Link">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/5/5e/Link_SSBU.png/120px-Link_SSBU.png"
+         class="w-12 h-12 rounded">
+    Link
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Zoner/swordie hybrid with bomb confirms, strong projectiles, and deadly kill power.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Super safe, best neutral tool.</li>
+      <li>Fair/Bair – Huge disjoints.</li>
+      <li>Uair – Anti-air + kill move.</li>
+      <li>Dair – Strong spike.</li>
+      <li>FTilt – Great spacing tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Boomerang – Spacing + combo starter.</li>
+      <li>Arrows – Chip + setups.</li>
+      <li>Remote Bomb – True combos, kill confirms.</li>
+      <li>Spin Attack – Fast OOS.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Up B OOS, bomb → fair, FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B, Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Bomb juggling, boomerang confirms, up-air ladders.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Strong tether mixups; bomb recovery boosts distance.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Little Mac">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/f/fc/Little_Mac_SSBU.png/120px-Little_Mac_SSBU.png"
+         class="w-12 h-12 rounded">
+    Little Mac
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Ground-based boxer with insane kill power but terrible air game and recovery.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Jab – Fast & safe.</li>
+      <li>FTilt – Core spacing tool.</li>
+      <li>DTilt – KO setups.</li>
+      <li>Up Tilt – Anti-air.</li>
+      <li>Smash attacks – Armor + kill absurdly early.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>KO Punch – Early kill.</li>
+      <li>Side B – Burst approach.</li>
+      <li>Up B – Escape + minor kill power.</li>
+      <li>Neutral B – Charged armor punch.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>FTilt, FSmash, KO Punch, DTilt → Up B.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B, Jab.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Corner pressure, armor on smashes.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Worst in the game—must stay grounded.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Lucario">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/5/5d/Lucario_SSBU.png/120px-Lucario_SSBU.png"
+         class="w-12 h-12 rounded">
+    Lucario
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Aura-based comeback character with strong kill power at high % and great mobility.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Safe combo tool.</li>
+      <li>Fair – Approach option.</li>
+      <li>Uair – Ladder potential.</li>
+      <li>Bair – Aura-powered kill move.</li>
+      <li>DTilt – Poke starter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Aura Sphere – Charged projectile.</li>
+      <li>Side B – Command grab.</li>
+      <li>Up B – Extreme Speed (combo setups).</li>
+      <li>Down B – Counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Aura Sphere fully charged, side-B grab at high %.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up B, Uair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Aura sphere pressure, back air confirms.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Extreme Speed is amazing but predictable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Lucas">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/32/Lucas_SSBU.png/120px-Lucas_SSBU.png"
+         class="w-12 h-12 rounded">
+    Lucas
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Zoner/brawler hybrid with great PK freeze setups and strong edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Fair – Core spacing tool.</li>
+      <li>Nair – Multi-hit combo starter.</li>
+      <li>Uair – Kill move.</li>
+      <li>Bair – Disjointed kick.</li>
+      <li>Dtilt – Trip into combos.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>PK Freeze – Kill / edgeguard.</li>
+      <li>PK Fire – Zoning tool.</li>
+      <li>PK Thunder – Recovery + offense.</li>
+      <li>PSI Magnet – Heals + reversals.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Uair, Back throw, PK Freeze, FSmash (bat).</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash (massive), PK Thunder startup.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>PK Freeze traps, dtilt lockouts, zoning.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h>
+    <p>PK Thunder is flexible but gimpable if intercepted.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Lucina">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/3/38/Lucina_SSBU.png/120px-Lucina_SSBU.png"
+         class="w-12 h-12 rounded">
+    Lucina
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Top-tier consistency swordie with safe aerials, great recovery, and strong edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Safe starter.</li>
+      <li>Fair – Neutral control.</li>
+      <li>Bair – Kill option.</li>
+      <li>Uair – Juggle.</li>
+      <li>Dair – Spike/Poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Shield Breaker – Ledge trap.</li>
+      <li>Dancing Blade – Consistent kill.</li>
+      <li>Counter – Defensive read.</li>
+      <li>Up B – Excellent recovery.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, FSmash, Up-B OOS, Uair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B, Nair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Ledge trapping, juggling, fair walls.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>One of the most reliable recoveries.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Luigi">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/b/ba/Luigi_SSBU.png/120px-Luigi_SSBU.png"
+         class="w-12 h-12 rounded">
+    Luigi
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> 0-to-death combo specialist with powerful grabs but terrible neutral and recovery.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Grab – Best combo starter.</li>
+      <li>Nair – Combo tool + combo breaker.</li>
+      <li>Bair – Kill move.</li>
+      <li>Dair – Spike.</li>
+      <li>Uair – Extension tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Fireball – Approach tool.</li>
+      <li>Side B – Green Missile.</li>
+      <li>Up B – Kill confirm.</li>
+      <li>Down B – Cyclone (great OOS).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Up B, Bair, Down-B, grab combos.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Cyclone (frame 3), Up B, Nair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Grab vortex, cyclone edgeguards, fireball approaches.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h>
+    <p>Green missile + tether, but very gimpable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Mario">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/a/a9/Mario_SSBU.png/120px-Mario_SSBU.png"
+         class="w-12 h-12 rounded">
+    Mario
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> All-rounder with strong combos, great edgeguards, and reliable kill power.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Combo finisher.</li>
+      <li>Fair – Meteor smash.</li>
+      <li>Uair – Ladder move.</li>
+      <li>Bair – Reliable kill option.</li>
+      <li>Dair – Multi-hit mixup.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Fireball – Neutral control.</li>
+      <li>Up B – OoS kill move.</li>
+      <li>Down B – Cape (reflect & gimp).</li>
+      <li>Side B – Flood (edgeguard tool).</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Uair, Up B OOS, Fair spike.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B (frame 3), Nair, Uair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Fireball approaches, uair ladders, cape edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>High vertical mix; cape stalls.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Marth">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/4/41/Marth_SSBU.png/120px-Marth_SSBU.png"
+         class="w-12 h-12 rounded">
+    Marth
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Tip-based swordie with great mobility and spacing fundamentals.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Fair/Bair – Spacing tools.</li>
+      <li>Uair – Kill move.</li>
+      <li>Nair – Combo starter.</li>
+      <li>Dair – Spike.</li>
+      <li>FTilt – Tip kills early.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Side B – Dancing Blade.</li>
+      <li>Neutral B – Shield Breaker.</li>
+      <li>Up B – Dolphin Slash (great OOS).</li>
+      <li>Down B – Counter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Tipped fair, bair, up-B, FSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Up B, Nair.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Tip spacing, juggling, edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Good angle control; punishable if low.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Mega Man">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/8/81/Mega_Man_SSBU.png/120px-Mega_Man_SSBU.png"
+         class="w-12 h-12 rounded">
+    Mega Man
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Projectile-based character with leaf shield pressure and strong edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Pellet zoning.</li>
+      <li>Bair – Kill tool.</li>
+      <li>Fair – Multi-hit pressure.</li>
+      <li>Uair – Upward pressure.</li>
+      <li>FTilt – Lemon lock.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Metal Blade – Confirm tool.</li>
+      <li>Leaf Shield – Approach.</li>
+      <li>Crash Bomb – Ledge trapping.</li>
+      <li>Up B – Recovery tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Uair multi-hit, metal blade → bair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash, Leaf Shield.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Lemons, metal blade setups, uair ladders.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Very safe — difficult to edgeguard.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Meta Knight">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/f/f4/Meta_Knight_SSBU.png/120px-Meta_Knight_SSBU.png"
+         class="w-12 h-12 rounded">
+    Meta Knight
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Ladder combo specialist with strong edgeguards and multiple jumps.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair — Combo starter.</li>
+      <li>Uair — Ladder tool.</li>
+      <li>Bair — Spacing.</li>
+      <li>Dair — Landing option.</li>
+      <li>Dash attack — combo starter.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Shuttle Loop — Kill confirm.</li>
+      <li>Mach Tornado — Multi-hit damage.</li>
+      <li>Dimensional Cape — Mixup tool.</li>
+      <li>Drill Rush — Recovery.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Up-B, Dash attack → uair → shuttle loop, DSmash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Shuttle Loop.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Ladder combos, edgeguards, platform extensions.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Excellent mixups; punishable if predictable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Mewtwo">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/5/56/Mewtwo_SSBU.png/120px-Mewtwo_SSBU.png"
+         class="w-12 h-12 rounded">
+    Mewtwo
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Fast, floaty glass cannon with amazing spacing and kill power.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Combo starter.</li>
+      <li>Fair – Strong kill move.</li>
+      <li>Bair – Safe and powerful.</li>
+      <li>Uair – Juggles.</li>
+      <li>Dtilt – Confirm tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</hubs>
+    <ul class="list-disc ml-6">
+      <li>Shadow Ball – Neutral + kills.</li>
+      <li>Teleport – Movement.</li>
+      <li>Disable – Shield break option.</li>
+      <li>Confusion – Reflector.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Fair, shadow ball, nair → fair, up smash.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Teleport cancels, shadow ball pressure.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Teleport is excellent; tail hurtbox is vulnerable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Mii Brawler">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/b/bd/Mii_Brawler_SSBU.png/120px-Mii_Brawler_SSBU.png"
+         class="w-12 h-12 rounded">
+    Mii Brawler
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Rushdown with multiple viable specials and strong kill confirms.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Combo starter.</li>
+      <li>Fair – Good spacing.</li>
+      <li>Bair – Kill option.</li>
+      <li>Dair – Spike.</li>
+      <li>Uair – Juggle.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Shotput – Edgeguarding.</li>
+      <li>Suplex – Command grab.</li>
+      <li>Helicopter Kick – Kill confirm.</li>
+      <li>Onslaught – Pressure tool.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Helicopter Kick, Uair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Shotput snipes, grab resets, dair spikes.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Varies with specials selected.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Min Min">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/c/c3/Min_Min_SSBU.png/120px-Min_Min_SSBU.png"
+         class="w-12 h-12 rounded">
+    Min Min
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Long-range boxer with incredible edgeguards but weak disadvantage up close.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>ARMS – Longest normals in the game.</li>
+      <li>Nair – Combo starter.</li>
+      <li>Bair – Good spacing.</li>
+      <li>Uair – KO tool.</li>
+      <li>FTilt – Long poke.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</hubs>
+    <ul class="list-disc ml-6">
+      <li>Side B — Ramram/Dragon/Megawatt selection.</li>
+      <li>Neutral B — Charged Dragon laser.</li>
+      <li>Up B — Tether recovery + grab.</li>
+      <li>Down B — Switch arm types.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Megawatt, Dragon laser, Bair, Uair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash (slow), Up B tether.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Ramram ledge traps, megawatt edgeguards.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Tether goes very far but is predictable.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Ness">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/1/1b/Ness_SSBU.png/120px-Ness_SSBU.png"
+         class="w-12 h-12 rounded">
+    Ness
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Aerial-based rushdown with strong projectiles and terrifying off-stage kill setups.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Nair – Frame 5 combo breaker.</li>
+      <li>Fair – Multi-hit spacing.</li>
+      <li>Bair – Strong KO option.</li>
+      <li>Uair – Juggle tool.</li>
+      <li>Dair – Spike.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>PK Fire – Frame trap tool.</li>
+      <li>PK Thunder – Recovery + corner pressure.</li>
+      <li>PK Flash – Kill move.</li>
+      <li>PSI Magnet – Heals + reversals.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Bair, Fair at high %, PK Thunder 2, dthrow → fair.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h3>
+    <p>Nair, Up Smash (situational).</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>PK Fire traps, fair walls, down-throw combos.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>PKT2 travels far but is easy to intercept.</p>
+  </div>
+</details>
+<details class="character-block bg-gray-800 rounded-xl p-4" data-name="Olimar">
+  <summary class="cursor-pointer text-xl font-bold flex items-center gap-3">
+    <img src="https://www.ssbwiki.com/images/thumb/a/aa/Olimar_SSBU.png/120px-Olimar_SSBU.png"
+         class="w-12 h-12 rounded">
+    Olimar
+  </summary>
+
+  <div class="mt-4 space-y-3">
+    <p><strong>Role Summary:</strong> Top-tier zoner/puppet character with insane damage off Pikmin toss and up-smash combos.</p>
+
+    <h3 class="font-semibold text-lg">Key Moves</h3>
+    <ul class="list-disc ml-6">
+      <li>Pikmin Toss — neutral control.</li>
+      <li>Uair — kill move.</li>
+      <li>Usmash — combo + kill.</li>
+      <li>Nair — get-off-me.</li>
+      <li>Fair/Bair — long pokes.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Specials</h3>
+    <ul class="list-disc ml-6">
+      <li>Pikmin Toss — the entire character’s kit.</li>
+      <li>Whistle — armor + Pikmin reorder.</li>
+      <li>Up B — wing recovery.</li>
+      <li>Side B variations — elemental effects.</li>
+    </ul>
+
+    <h3 class="font-semibold text-lg">Kill Moves</h3>
+    <p>Purple pikmin fair/bair, up-smash, up-air.</p>
+
+    <h3 class="font-semibold text-lg">OOS Options</h38>
+    <p>Nair, Up Smash.</p>
+
+    <h3 class="font-semibold text-lg">Advantage Tools</h3>
+    <p>Pikmin toss vortex, juggle loops, whistle armor.</p>
+
+    <h3 class="font-semibold text-lg">Recovery Notes</h3>
+    <p>Up B goes far but weak to edgeguards.</p>
+  </div>
+</details>
+
+  </div>
+
+  <!-- SEARCH SCRIPT -->
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    const blocks = document.querySelectorAll(".character-block");
+
+    searchBar.addEventListener("input", function () {
+      const q = this.value.toLowerCase();
+      blocks.forEach(block => {
+        const name = block.getAttribute("data-name").toLowerCase();
+        block.style.display = name.includes(q) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
 
