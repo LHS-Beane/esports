@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSBU Program | Home</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-red-600 via-indigo-700 to-slate-900 text-white shadow-lg">
+    <div class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold">Super Smash Bros. Ultimate</h1>
+        <p class="text-sm md:text-base opacity-80">Varsity Training • Competitive Prep • Player Development</p>
+      </div>
+      <a href="../index.html"
+         class="hidden sm:inline-block text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full border border-white/30">
+        ← Esports Home
+      </a>
+    </div>
+
+    <!-- Nav -->
+    <nav class="bg-black/20">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-wrap gap-2 text-sm">
+        <a href="index.html" class="px-3 py-1 rounded-full bg-white/20 font-semibold">SSBU Home</a>
+        <a href="drills/index.html" class="px-3 py-1 rounded-full hover:bg-white/15">Drills & Training</a>
+        <a href="competitive/index.html" class="px-3 py-1 rounded-full hover:bg-white/15">Competitive Prep</a>
+        <a href="vod/index.html" class="px-3 py-1 rounded-full hover:bg-white/15">VOD Review</a>
+        <a href="characters/index.html" class="px-3 py-1 rounded-full hover:bg-white/15">Character Lab</a>
+        <a href="resources/index.html" class="px-3 py-1 rounded-full hover:bg-white/15">Resources</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-8 md:py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Welcome to the SSBU Program Hub</h2>
+        <p class="text-gray-700 mb-4">
+          This site is your home base for <span class="font-semibold">training drills, tournament prep,
+          character development, and VOD review</span>. Use it to structure your practice on your own time
+          and to prepare for matches as a team.
+        </p>
+        <ul class="space-y-1 text-sm text-gray-700 mb-4">
+          <li>• Learn how to practice efficiently, not just play friendlies.</li>
+          <li>• Build habits in neutral, advantage, and disadvantage.</li>
+          <li>• Prepare mentally and strategically for tournaments.</li>
+          <li>• Track your growth and identify your next goals.</li>
+        </ul>
+        <div class="flex flex-wrap gap-3 mt-2">
+          <a href="drills/index.html"
+             class="inline-flex items-center px-4 py-2 rounded-lg bg-red-600 text-white text-sm font-semibold hover:bg-red-700">
+            Start Training
+          </a>
+          <a href="competitive/index.html"
+             class="inline-flex items-center px-4 py-2 rounded-lg border border-gray-300 text-sm font-semibold hover:bg-gray-100">
+            Prepare for Tournament
+          </a>
+        </div>
+      </div>
+      <div class="bg-slate-900 text-white rounded-2xl p-5 shadow-lg">
+        <h3 class="text-lg font-semibold mb-3">Weekly Focus Framework</h3>
+        <ol class="space-y-2 text-sm text-slate-100">
+          <li><span class="font-semibold">Day 1–2:</span> Neutral & spacing drills + movement.</li>
+          <li><span class="font-semibold">Day 3:</span> Ledge trapping, juggling, and offstage practice.</li>
+          <li><span class="font-semibold">Day 4:</span> VOD review + matchup notes.</li>
+          <li><span class="font-semibold">Day 5:</span> Tournament simulation sets with goals.</li>
+        </ol>
+        <p class="mt-3 text-xs text-slate-300">
+          Use the pages on this site to choose drills and assignments for each day. Consistency > marathons.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-8 md:py-10">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Where do you want to go?</h2>
+      <div class="grid gap-5 md:grid-cols-2">
+        <a href="drills/index.html"
+           class="bg-slate-800 rounded-xl p-5 border border-slate-700 hover:border-red-500 hover:-translate-y-1 transition transform">
+          <h3 class="text-lg font-bold mb-1">Drills & Training</h3>
+          <p class="text-sm text-slate-200">
+            Structured practice for neutral, ledge trapping, juggling, disadvantage, tech skill, and kill confirms.
+          </p>
+          <p class="mt-2 text-xs text-red-300 uppercase tracking-wide">Daily practice goals</p>
+        </a>
+
+        <a href="competitive/index.html"
+           class="bg-slate-800 rounded-xl p-5 border border-slate-700 hover:border-amber-400 hover:-translate-y-1 transition transform">
+          <h3 class="text-lg font-bold mb-1">Competitive Prep</h3>
+          <p class="text-sm text-slate-200">
+            Stage lists, game plans, stock trading theory, mindset tools, and pre-tournament checklists.
+          </p>
+          <p class="mt-2 text-xs text-amber-300 uppercase tracking-wide">Tournament ready</p>
+        </a>
+
+        <a href="vod/index.html"
+           class="bg-slate-800 rounded-xl p-5 border border-slate-700 hover:border-sky-400 hover:-translate-y-1 transition transform">
+          <h3 class="text-lg font-bold mb-1">VOD Review System</h3>
+          <p class="text-sm text-slate-200">
+            Step-by-step questions to analyze your own matches and learn from mistakes instead of repeating them.
+          </p>
+          <p class="mt-2 text-xs text-sky-300 uppercase tracking-wide">Self-coaching</p>
+        </a>
+
+        <a href="characters/index.html"
+           class="bg-slate-800 rounded-xl p-5 border border-slate-700 hover:border-emerald-400 hover:-translate-y-1 transition transform">
+          <h3 class="text-lg font-bold mb-1">Character Lab</h3>
+          <p class="text-sm text-slate-200">
+            Pages for your mains and secondaries: combos, kill confirms, ledge traps, recovery plans, and key matchups.
+          </p>
+          <p class="mt-2 text-xs text-emerald-300 uppercase tracking-wide">Player identity</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expectations -->
+  <section class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-8 md:py-10">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Player Expectations</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-800">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Practice Standards</h3>
+          <ul class="space-y-1">
+            <li>• Use drills, not only friendlies.</li>
+            <li>• Have a goal every session (movement, ledge trapping, etc.).</li>
+            <li>• Track at least one thing you improved each week.</li>
+            <li>• Bring one question from your practice to the coach.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Competitive Standards</h3>
+          <ul class="space-y-1">
+            <li>• Show respect to teammates and opponents.</li>
+            <li>• Take responsibility for your habits and mindset.</li>
+            <li>• Watch and review your own VODs regularly.</li>
+            <li>• Support teammates in learning matchups and prep.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-5 mt-6">
+    <div class="max-w-5xl mx-auto px-4 text-center text-xs">
+      <p>© <span id="year"></span> SSBU Program. Built for training & competition.</p>
+      <p class="mt-1">
+        <a href="../index.html" class="underline underline-offset-2 hover:text-white">← Back to Esports Index</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
 
